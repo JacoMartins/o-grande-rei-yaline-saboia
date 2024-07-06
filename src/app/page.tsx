@@ -139,16 +139,18 @@ export default function Home() {
                 Evento presencial em Theatro José de Alencar, Fortaleza - CE
               </div>
             </div>
-            <div className="flex gap-4 justify-center px-5 py-2 mt-12 text-3xl text-amber-400 bg-red-900 rounded-lg max-md:flex-wrap max-md:mt-10">
-              <div className="max-md:max-w-full">
-                Garanta já o seu Ingresso no Sympla
+            <a target="_blank" href="https://www.sympla.com.br/evento/musical-o-grande-rei-celebration-10-anos-da-edys/2540995">
+              <div className="flex gap-4 justify-center px-5 py-2 mt-12 text-3xl text-amber-400 bg-red-900 rounded-lg max-md:flex-wrap max-md:mt-10">
+                <div className="max-md:max-w-full">
+                  Garanta já o seu Ingresso no Sympla
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1207a20adcfbd240fffb83511bc1fc7ab906f9cc6966473ef4269b3769a2e28?apiKey=651682418c2c47b48275304708df7bfa&"
+                  className="shrink-0 my-auto w-8 aspect-square"
+                />
               </div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1207a20adcfbd240fffb83511bc1fc7ab906f9cc6966473ef4269b3769a2e28?apiKey=651682418c2c47b48275304708df7bfa&"
-                className="shrink-0 my-auto w-8 aspect-square"
-              />
-            </div>
+            </a>
           </div>
         </div>
       </div>
