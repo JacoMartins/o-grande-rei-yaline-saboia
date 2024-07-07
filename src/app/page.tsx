@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
+      {/* <Section
         id="elenco"
         title="Elenco"
         bgColor="bg-lemon-yellow-100"
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       <Section
         id="faq"
@@ -80,30 +80,57 @@ export default function Home() {
         bgColor="bg-sunset-yellow-400"
         textColor="text-bloody-red-600"
       >
-        <div className="flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col justify-between lg:items-center md:items-center sm:items-start max-sm:items-start gap-4 lg:w-[24rem] md:w-[24rem] sm:w-full max-sm:w-full">
-          <div className="flex flex-col justify-left items-start text-red-950 text-left">
+        <div className="flex lg:flex-col md:flex-col sm:flex-col max-sm:flex-col justify-between lg:items-center md:items-center sm:items-start max-sm:items-start lg:gap-4 md:gap-4 sm:gap-8 max-sm:gap-8 lg:w-[26rem] md:w-[26rem] sm:w-full max-sm:w-full">
+          <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
             <span className={`${inter.className} text-lg`}>01 de novembro</span>
             <h4 className="text-2xl">Músical</h4>
             <h3 className="text-4xl">O Grandei Rei</h3>
           </div>
-          <div className="flex flex-col lg:justify-end md:justify-end lg:items-end md:items-end sm:items-start max-sm:items-start w-6/12 max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
-            <span className={`${inter.className} text-lg font-medium`}>
-              Ingresso único
-            </span>
-            <div className="flex gap-1.5 whitespace-nowrap">
-              <span className="text-2xl">R$</span>
-              <h3 className="text-4xl leading-8">
-                22,50
-              </h3>
+
+          <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col lg:gap-12 md:gap-12 sm:gap-4 max-sm:gap-4 lg:justify-end md:justify-end sm:justify-start max-sm:justify-start items-start">
+            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
+              <span className={`${inter.className} text-lg font-medium`}>
+                1º Lote
+              </span>
+              <div className="flex gap-1.5 whitespace-nowrap">
+                <span className="text-2xl">R$</span>
+                <h3 className="text-4xl leading-8">
+                  22,50
+                </h3>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
+              <span className={`${inter.className} text-lg font-medium`}>
+                2º Lote
+              </span>
+              <div className="flex gap-1.5 whitespace-nowrap">
+                <span className="text-2xl">R$</span>
+                <h3 className="text-4xl leading-8">
+                  22,50
+                </h3>
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
+              <span className={`${inter.className} text-lg font-medium`}>
+                3º Lote
+              </span>
+              <div className="flex gap-1.5 whitespace-nowrap">
+                <span className="text-2xl">R$</span>
+                <h3 className="text-4xl leading-8">
+                  22,50
+                </h3>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-row gap-3 justify-center items-center lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-center text-red-950">
+        <div className="flex flex-row gap-3 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left text-red-950">
           <MapPin className="min-w-6 min-h-6 w-6 h-6" weight="fill" />
-          <div className="max-md:max-w-full">
+          <span className="max-md:max-w-full leading-6">
             Evento presencial em Theatro José de Alencar, Fortaleza - CE
-          </div>
+          </span>
         </div>
 
         <a

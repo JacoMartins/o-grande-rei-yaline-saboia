@@ -33,7 +33,7 @@ export default function Header() {
                     <List className="w-8 h-8" weight="bold" />
                 </button>
             </div>
-            <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full`}>
+            <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-auto max-md:h-auto sm:h-screen max-sm:h-screen lg:justify-between md:justify-between sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full`}>
                 <a 
                     href="#musical"
                     onClick={handleAnchorClick}
@@ -46,12 +46,12 @@ export default function Header() {
                 >
                     O musical
                 </a>
-                <a 
+                {/* <a 
                     href="#elenco"
                     onClick={handleAnchorClick}
                 >
                     Elenco
-                </a>
+                </a> */}
                 <a 
                     href="#ingressos"
                     onClick={handleAnchorClick}
