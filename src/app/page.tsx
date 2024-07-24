@@ -2,10 +2,11 @@ import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
 import banner from '@/assets/images/banner.png';
-import simba_adulto from '@/assets/images/simba_adulto.png';
+import banner_mob from '@/assets/images/banner_mob.png';
 import { ArrowUpRight, MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import AccordionDrawer from "@/components/AccordionDrawer";
+import Map from "@/components/Map";
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -13,13 +14,23 @@ const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <figure id="musical" className="flex flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
+      <figure id="musical" className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
         <Image
           src={banner.src}
           width={2592}
           height={864}
           alt="Banner do musical O Grande Rei"
           className="w-full aspect-[3.03] max-md:max-w-full"
+        />
+      </figure>
+
+      <figure id="musical" className="lg:hidden md:hidden max-md:hidden sm:flex max-sm:flex flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
+        <Image
+          src={banner_mob.src}
+          width={1080}
+          height={1080}
+          alt="Banner do musical O Grande Rei"
+          className="w-full aspect-square max-md:max-w-full"
         />
       </figure>
 
@@ -79,67 +90,113 @@ export default function Home() {
         title="Ingressos"
         bgColor="bg-sunset-yellow-400"
         textColor="text-bloody-red-600"
+        className="gap-8"
       >
-        <div className="flex lg:flex-col md:flex-col sm:flex-col max-sm:flex-col justify-between lg:items-center md:items-center sm:items-start max-sm:items-start lg:gap-4 md:gap-4 sm:gap-8 max-sm:gap-8 lg:w-[26rem] md:w-[26rem] sm:w-full max-sm:w-full">
-          <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
-            <span className={`${inter.className} text-lg`}>01 de novembro</span>
-            <h4 className="text-2xl">Músical</h4>
-            <h3 className="text-4xl">O Grandei Rei</h3>
-          </div>
+        <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
+          <span className={`${inter.className} text-lg`}>01 de novembro</span>
+          <h4 className="text-2xl">Músical</h4>
+          <h3 className="text-4xl">O Grandei Rei</h3>
+        </div>
 
-          <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col lg:gap-12 md:gap-12 sm:gap-4 max-sm:gap-4 lg:justify-end md:justify-end sm:justify-start max-sm:justify-start items-start">
-            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
-              <span className={`${inter.className} text-lg font-medium`}>
+        <div className="flex flex-col gap-12 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
+          <div className="flex lg:flex-col md:flex-col sm:flex-col max-sm:flex-col justify-between lg:items-center md:items-center sm:items-start max-sm:items-start lg:gap-4 md:gap-4 sm:gap-8 max-sm:gap-8 lg:w-[26rem] md:w-[26rem] sm:w-full max-sm:w-full">
+            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-center md:justify-center sm:justify-start max-sm:justify-start items-center w-full">
+              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}></div>
+              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Meia</div>
+              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Inteira</div>
+            </div>
+
+            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
+              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
                 1º Lote
               </span>
-              <div className="flex gap-1.5 whitespace-nowrap">
-                <span className="text-2xl">R$</span>
-                <h3 className="text-4xl leading-8">
-                  22,50
-                </h3>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    50,00
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    100,00
+                  </h3>
+                </div>
               </div>
             </div>
 
-            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
-              <span className={`${inter.className} text-lg font-medium`}>
+            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
+              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
                 2º Lote
               </span>
-              <div className="flex gap-1.5 whitespace-nowrap">
-                <span className="text-2xl">R$</span>
-                <h3 className="text-4xl leading-8">
-                  22,50
-                </h3>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    55,00
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    110,00
+                  </h3>
+                </div>
               </div>
             </div>
-
-            <div className="flex flex-col lg:justify-end md:justify-end lg:items-center md:items-center sm:items-start max-sm:items-start max-md:w-full lg:text-right md:text-right sm:text-left max-sm:text-left">
-              <span className={`${inter.className} text-lg font-medium`}>
+            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
+              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
                 3º Lote
               </span>
-              <div className="flex gap-1.5 whitespace-nowrap">
-                <span className="text-2xl">R$</span>
-                <h3 className="text-4xl leading-8">
-                  22,50
-                </h3>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    60,00
+                  </h3>
+                </div>
+              </div>
+
+              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
+                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
+                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
+                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
+                    120,00
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="flex flex-row gap-3 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left text-red-950">
-          <MapPin className="min-w-6 min-h-6 w-6 h-6" weight="fill" />
-          <span className="max-md:max-w-full leading-6">
-            Evento presencial em Theatro José de Alencar, Fortaleza - CE
-          </span>
-        </div>
 
-        <a
-          className="flex flex-row gap-4 justify-center items-center px-5 py-2 text-3xl text-sunset-yellow-400 bg-bloody-red-600 rounded-lg hover:bg-red-800 transition-colors duration-300 ease-in-out"
-          target="_blank"
-          href="https://www.sympla.com.br/evento/musical-o-grande-rei-celebration-10-anos-da-edys/2540995">
-          Garanta já o seu Ingresso no Sympla
-          <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
-        </a>
+          <div className="flex flex-col gap-4 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left text-red-950">
+            <Map className="h-48 w-96 overflow-hidden" />
+            <div className="flex flex-row gap-3 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
+              <MapPin className="min-w-5 min-h-5 w-5 h-5" weight="fill" />
+              <span className={`${berlin.className} max-md:max-w-full leading-6 text-[1.375rem] font-medium`}>
+                Evento presencial em Theatro José de Alencar, Fortaleza - CE
+              </span>
+            </div>
+          </div>
+
+          <a
+            className="flex flex-row gap-4 justify-center items-center px-5 py-2 text-3xl text-sunset-yellow-400 bg-bloody-red-600 rounded-lg hover:bg-red-800 transition-colors duration-300 ease-in-out"
+            target="_blank"
+            href="https://www.sympla.com.br/evento/musical-o-grande-rei-celebration-10-anos-da-edys/2540995">
+            Garanta já o seu Ingresso no Sympla
+            <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
+          </a>
+        </div>
       </Section>
     </main >
   );
