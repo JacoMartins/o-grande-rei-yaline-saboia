@@ -23,7 +23,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`fixed flex lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col sm:gap-8 max-sm:gap-8 justify-center items-center px-16 py-6 w-full bg-sunset-yellow-400 text-bloody-red-800 max-md:px-5 max-md:max-w-full ${berlin.className}`}>
+        <header className={`fixed flex lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col sm:gap-8 max-sm:gap-8 justify-center items-center px-16 py-6 w-full bg-sunset-yellow-400 text-bloody-red-800 max-md:px-5 max-md:max-w-full ${berlin.className} z-10`}>
             <div className="flex gap-5 justify-between items-center w-full max-w-6xl max-md:max-w-full">
                 <h1 className="text-4xl">O Grande Rei</h1>
                 <button
@@ -33,26 +33,30 @@ export default function Header() {
                     <List className="w-8 h-8" weight="bold" />
                 </button>
             </div>
-            <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 justify-between items-center text-2xl max-md:flex-wrap max-md:max-w-full`}>
+            <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-auto max-md:h-auto sm:h-screen max-sm:h-screen lg:justify-between md:justify-between sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full`}>
                 <a 
+                    className="text-nowrap"
                     href="#musical"
                     onClick={handleAnchorClick}
                 >
                     Início
                 </a>
                 <a 
+                    className="text-nowrap"
                     href="#musical"
                     onClick={handleAnchorClick}
                 >
                     O musical
                 </a>
-                <a 
+                {/* <a 
+                    className="text-nowrap"
                     href="#elenco"
                     onClick={handleAnchorClick}
                 >
                     Elenco
-                </a>
+                </a> */}
                 <a 
+                    className="text-nowrap"
                     href="#ingressos"
                     onClick={handleAnchorClick}
                 >
