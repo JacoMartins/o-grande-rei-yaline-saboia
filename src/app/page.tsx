@@ -14,30 +14,32 @@ const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <figure id="musical" className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
-        <Image
-          src={banner.src}
-          width={2592}
-          height={864}
-          alt="Banner do musical O Grande Rei"
-          className="w-full aspect-[3.03] max-md:max-w-full"
-        />
-      </figure>
+      <section id="musical">
+        <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
+          <Image
+            src={banner.src}
+            width={2592}
+            height={864}
+            alt="Banner do musical O Grande Rei"
+            className="w-full aspect-[3.03] max-md:max-w-full"
+          />
+        </figure>
 
-      <figure id="musical" className="lg:hidden md:hidden max-md:hidden sm:flex max-sm:flex flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
-        <Image
-          src={banner_mob.src}
-          width={1080}
-          height={1080}
-          alt="Banner do musical O Grande Rei"
-          className="w-full aspect-square max-md:max-w-full"
-        />
-      </figure>
+        <figure className="lg:hidden md:hidden max-md:hidden sm:flex max-sm:flex flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
+          <Image
+            src={banner_mob.src}
+            width={1080}
+            height={1080}
+            alt="Banner do musical O Grande Rei"
+            className="w-full aspect-square max-md:max-w-full"
+          />
+        </figure>
+      </section>
 
       <Section
         title="O musical"
-        bgColor="bg-sunset-yellow-400"
-        textColor="text-bloody-red-600"
+        bgColor="bg-bloody-red-800"
+        textColor="text-lemon-yellow-100"
       >
         <div className="max-w-2xl max-md:max-w-full">
           <p className={`text-2xl ${inter.className}`}>
@@ -75,22 +77,11 @@ export default function Home() {
       </Section> */}
 
       <Section
-        id="faq"
-        title="Dúvidas Frequentes"
-        bgColor="bg-bloody-red-500"
-        textColor="text-sunset-yellow-400"
-      >
-        <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
-          <AccordionDrawer />
-        </div>
-      </Section>
-
-      <Section
         id="ingressos"
         title="Ingressos"
         bgColor="bg-sunset-yellow-400"
         textColor="text-bloody-red-600"
-        className="gap-8"
+        className="lg:gap-8 md:gap-8 sm:gap-12 max-sm:gap-12"
       >
         <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
           <span className={`${inter.className} text-lg`}>01 de novembro</span>
@@ -180,7 +171,7 @@ export default function Home() {
 
 
           <div className="flex flex-col gap-4 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left text-red-950">
-            <Map className="h-48 w-96 overflow-hidden" />
+            <Map className="h-48 lg:w-96 md:w-96 sm:w-full max-sm:w-full overflow-hidden" />
             <div className="flex flex-row gap-3 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
               <MapPin className="min-w-5 min-h-5 w-5 h-5" weight="fill" />
               <span className={`${berlin.className} max-md:max-w-full leading-6 text-[1.375rem] font-medium`}>
@@ -198,6 +189,18 @@ export default function Home() {
           </a>
         </div>
       </Section>
+
+      <Section
+        id="faq"
+        title="Dúvidas Frequentes"
+        bgColor="bg-strong-wood-700"
+        textColor="text-lemon-yellow-100"
+      >
+        <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
+          <AccordionDrawer />
+        </div>
+      </Section>
+
     </main >
   );
 }

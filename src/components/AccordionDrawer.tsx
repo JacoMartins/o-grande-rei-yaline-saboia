@@ -17,13 +17,14 @@ export default function AccordionDrawer() {
     }
 
     return (
-        <div className="flex flex-col gap-10 justify-center items-center w-full max-w-3xl">
-            <div className="flex gap-5 justify-start items-center lg:self-auto md:self-auto sm:self-stretch max-sm:self-stretch whitespace-nowrap overflow-auto">
+        <div className="flex flex-col gap-10 justify-center items-center max-w-3xl lg:w-3xl md:w-full sm:w-full max-sm:w-full">
+            <div className="flex gap-5 justify-start items-center overflow-auto w-full">
                 {Object.keys(questions).map((question) => {
                     return (
                         <button
                             key={question + 1}
-                            className={`flex flex-col justify-center px-4 py-1 text-2xl rounded-lg transition-colors duration-300 ease-in-out hover:bg-sunset-yellow-400 hover:text-red-900 ${activeQuestion === question ? "text-red-900" : "text-sunset-yellow-400"} ${activeQuestion === question ? "bg-sunset-yellow-400" : "bg-transparent"}`}
+                            type="button"
+                            className={`flex flex-col justify-center px-4 py-1 text-2xl rounded-lg transition-colors duration-300 ease-in-out hover:bg-lemon-yellow-100 hover:text-strong-wood-700 ${activeQuestion === question ? "text-strong-wood-700" : "text-lemon-yellow-100"} ${activeQuestion === question ? "bg-lemon-yellow-100" : "bg-transparent"}`}
                             onClick={() => handleActiveQuestion(question)}
                         >
                             {question}
@@ -31,31 +32,34 @@ export default function AccordionDrawer() {
                     )
                 })}
             </div>
-            {
-                Object.entries(questions[activeQuestion]).map(([question, answer]) => {
-                    return (
-                        <Accordion
-                            key={question + 24}
-                            type="single"
-                            collapsible
-                        >
-                            <AccordionItem
-                                className="max-w-2xl w-full border-b-2 border-sunset-yellow-400"
-                                value={question}
+            <div className="flex flex-col gap-5 justify-center items-center lg:w-[36rem] md:w-full sm:w-full max-sm:w-full">
+                {
+                    Object.entries(questions[activeQuestion]).map(([question, answer]) => {
+                        return (
+                            <Accordion
+                                key={question + 24}
+                                type="single"
+                                collapsible
+                                className="w-full"
                             >
-                                <AccordionTrigger
-                                    className="text-2xl text-sunset-yellow-400"
+                                <AccordionItem
+                                    className="w-full border-b-2 border-lemon-yellow-100"
+                                    value={question}
                                 >
-                                    {question}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-xl text-sunset-orange-300 text-left">
-                                    {answer}
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
-                    )
-                })
-            }
+                                    <AccordionTrigger
+                                        className="text-2xl text-lemon-yellow-100"
+                                    >
+                                        {question}
+                                    </AccordionTrigger>
+                                    <AccordionContent className="text-xl text-sunset-orange-300 text-left w-full">
+                                        {answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

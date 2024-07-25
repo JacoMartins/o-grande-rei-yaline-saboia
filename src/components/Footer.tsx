@@ -9,18 +9,18 @@ const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col justify-center items-center w-full text-xl sunset-orange-300 bg-bloody-red-800">
+        <footer className="flex flex-col justify-center items-center w-full text-xl sunset-yellow-400 bg-bloody-red-800">
             <article className="flex gap-5 justify-center items-center w-full bg-bloody-red-600">
                 <div className="flex lg:flex-col md:flex-col max-md:flex-col sm:flex-col-reverse max-sm:flex-col-reverse justify-start items-center gap-10 w-full max-w-6xl w-full px-8 py-12">
 
                     <div className="flex flex-row gap-6 justify-between items-start w-full">
-                        <div className="flex flex-col gap-0 text-sunset-orange-300">
+                        <div className="flex flex-col gap-0 text-sunset-yellow-400">
                             <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
                             <span className={`${inter.className} text-xl font-light`}>
                                 Acompanhe as nossas novidades
                             </span>
                         </div>
-                        <button className="flex justify-center items-center p-1.5 w-12 h-12 bg-sunset-orange-300 rounded-2xl text-bloody-red-600 transition-all duration-300 ease-in-out hover:brightness-105 active:brightness-90">
+                        <button className="flex justify-center items-center p-1.5 w-12 h-12 bg-sunset-yellow-400 rounded-2xl text-bloody-red-600 transition-all duration-300 ease-in-out hover:brightness-105 active:brightness-90">
                             <InstagramLogo className="w-10 h-10" weight="regular" />
                         </button>
                     </div>
@@ -38,7 +38,7 @@ export default function Footer() {
                         </aside>
 
 
-                        <div className="flex lg:block md:block max-md:block sm:hidden max-sm:hidden flex-col gap-4 text-lg text-sunset-orange-300 text-right">
+                        <div className="flex lg:block md:block max-md:block sm:hidden max-sm:hidden flex-col gap-4 text-lg text-sunset-yellow-400 text-right">
                             <span className="font-semibold">Acesso Rápido</span>
 
                             <nav className="flex flex-col gap-0">
