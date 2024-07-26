@@ -1,3 +1,5 @@
+"use client"
+
 import { InstagramLogo } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import yaline_saboia_logo from "@/assets/images/yaline_saboya.png";
@@ -8,6 +10,19 @@ const inter = Inter({ subsets: ["latin"] });
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 
 export default function Footer() {
+    const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        const target = e.currentTarget.getAttribute('href');
+        const element = document.querySelector(target as string);
+
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }
+    }   
+    
     return (
         <footer className="flex flex-col justify-center items-center w-full text-xl sunset-yellow-400 bg-bloody-red-800">
             <article className="flex gap-5 justify-center items-center w-full bg-bloody-red-600">
@@ -20,9 +35,13 @@ export default function Footer() {
                                 Acompanhe as nossas novidades
                             </span>
                         </div>
-                        <button className="flex justify-center items-center p-1.5 w-12 h-12 bg-sunset-yellow-400 rounded-2xl text-bloody-red-600 transition-all duration-300 ease-in-out hover:brightness-105 active:brightness-90">
+                        <a
+                            href="https://www.instagram.com/escoladedancayalinesaboia/"
+                            target="_blank"
+                            className="flex justify-center items-center p-1.5 w-12 h-12 bg-sunset-yellow-400 rounded-2xl text-bloody-red-600 transition-all duration-300 ease-in-out hover:brightness-105 active:brightness-90"
+                        >
                             <InstagramLogo className="w-10 h-10" weight="regular" />
-                        </button>
+                        </a>
                     </div>
 
                     <div className="flex flex-row gap-[4.5rem] w-full lg:justify-between max-md:justify-between md:justify-between items-center sm:justify-center max-sm:justify-center">
@@ -42,10 +61,34 @@ export default function Footer() {
                             <span className="font-semibold">Acesso Rápido</span>
 
                             <nav className="flex flex-col gap-0">
-                                <a className="font-light underline leading-tight">Início</a>
-                                <a className="font-light underline leading-tight">O musical</a>
-                                <a className="font-light underline leading-tight">Nossa História</a>
-                                <a className="font-light underline leading-tight">Dúvidas Frequentes</a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#inicio"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Início
+                                </a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#sinopse"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Sinopse
+                                </a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#ingressos"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Ingressos
+                                </a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#faq"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Dúvidas Frequentes
+                                </a>
                             </nav>
                         </div>
                     </div>

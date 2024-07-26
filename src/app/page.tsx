@@ -14,7 +14,7 @@ const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <section id="sinopse">
+      <section id="inicio">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
           <Image
             src={banner.src}
@@ -37,6 +37,7 @@ export default function Home() {
       </section>
 
       <Section
+        id="sinopse"
         title="Sinopse do Musical"
         bgColor="bg-bloody-red-800"
         textColor="text-lemon-yellow-100"

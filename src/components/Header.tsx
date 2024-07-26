@@ -48,7 +48,7 @@ export default function Header() {
             <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-auto max-md:h-auto sm:h-screen max-sm:h-screen lg:justify-between md:justify-between sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full text-lemon-yellow-100`}>
                 <a 
                     className="text-nowrap"
-                    href="#musical"
+                    href="#inicio"
                     onClick={handleAnchorClick}
                 >
                     Início
