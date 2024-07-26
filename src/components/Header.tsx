@@ -1,7 +1,7 @@
 "use client";
 
 import localFont from "next/font/local";
-import { List } from "@phosphor-icons/react/dist/ssr";
+import { List, X } from "@phosphor-icons/react/dist/ssr";
 import { useState } from "react";
 
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -36,7 +36,13 @@ export default function Header() {
                     className="lg:hidden md:hidden sm:block max-sm:block flex items-center justify-center p-2 rounded-full text-lemon-yellow-100 transition-colors duration-300 ease-in-out"
                     onClick={handleNavVisibility}
                 >
-                    <List className="w-8 h-8" weight="bold" />
+                    {
+                        navVisible ? (
+                            <X className="w-8 h-8" weight="bold" />
+                        ) : (
+                            <List className="w-8 h-8" weight="bold" />
+                        )
+                    }
                 </button>
             </div>
             <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-auto max-md:h-auto sm:h-screen max-sm:h-screen lg:justify-between md:justify-between sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full text-lemon-yellow-100`}>
