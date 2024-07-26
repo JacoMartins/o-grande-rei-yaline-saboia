@@ -14,7 +14,7 @@ const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <section id="musical">
+      <section id="sinopse">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
           <Image
             src={banner.src}
@@ -37,16 +37,19 @@ export default function Home() {
       </section>
 
       <Section
-        title="O musical"
+        title="Sinopse do Musical"
         bgColor="bg-bloody-red-800"
         textColor="text-lemon-yellow-100"
       >
-        <div className="max-w-2xl max-md:max-w-full">
+        <div className="flex flex-col gap-8 max-w-3xl max-md:max-w-full">
           <p className={`text-2xl ${inter.className}`}>
-            Irrompe com cores gloriosas, efeitos impressionantes e música
-            encantadora. O espetáculo conta a história poderosa de Simba em
-            sua jornada de um pequeno filhote ansioso para se tornar rei até o
-            encontro com seu majestoso destino nas Terras do Reino.
+            Prepare-se para uma jornada épica e emocionante com o musical "O Grande Rei" em comemoração aos 10 anos da EDYS, o filme que marcou a infância de muita gente. Baseado no clássico da Disney, este musical deslumbrante transporta o público para as vastas planícies da savana africana com uma mistura mágica de teatro, música e dança.
+          </p>
+          <p className={`text-2xl ${inter.className}`}>
+            A história segue o jovem leão Simba, desde seu nascimento como herdeiro do trono até sua luta para reivindicar seu lugar como rei das Terras do Reino.
+          </p>
+          <p className={`text-2xl ${inter.className}`}>
+            Venha se maravilhar com a história de coragem, amizade e autodescoberta que conquistou corações em todo o planeta. "O Grande Rei" não é apenas um musical, é uma celebração da vida e da majestade da natureza que vai te deixar sem palavras. Não perca a oportunidade de vivenciar essa obra-prima teatral que é simplesmente imperdível!
           </p>
         </div>
       </Section>

@@ -49,10 +49,10 @@ export default function Header() {
                 </a>
                 <a 
                     className="text-nowrap"
-                    href="#musical"
+                    href="#sinopse"
                     onClick={handleAnchorClick}
                 >
-                    O musical
+                    Sinopse
                 </a>
                 {/* <a 
                     className="text-nowrap"
