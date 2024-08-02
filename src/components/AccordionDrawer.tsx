@@ -18,7 +18,7 @@ export default function AccordionDrawer() {
 
     return (
         <div className="flex flex-col gap-10 justify-center items-center max-w-3xl lg:w-3xl md:w-full sm:w-full max-sm:w-full">
-            <div className="flex gap-5 justify-start items-center overflow-auto w-full">
+            <div className="flex gap-5 lg:justify-center md:justify-center max-md:justify-start sm:justify-start max-sm:justify-start items-center overflow-auto w-full">
                 {Object.keys(questions).map((question) => {
                     return (
                         <button

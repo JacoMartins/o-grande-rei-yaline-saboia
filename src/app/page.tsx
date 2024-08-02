@@ -1,7 +1,7 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
-import banner from '@/assets/images/banner.png';
+import banner_pc from '@/assets/images/banner_pc.jpg';
 import banner_mob from '@/assets/images/banner_mob.png';
 import { ArrowUpRight, MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
@@ -17,7 +17,7 @@ export default function Home() {
       <section id="inicio">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
           <Image
-            src={banner.src}
+            src={banner_pc.src}
             width={2592}
             height={864}
             alt="Banner do musical O Grande Rei"
