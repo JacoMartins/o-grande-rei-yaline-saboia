@@ -43,13 +43,13 @@ export default function Home() {
         textColor="text-lemon-yellow-100"
       >
         <div className="flex flex-col gap-8 max-w-3xl max-md:max-w-full">
-          <p className={`text-2xl ${inter.className}`}>
-            Prepare-se para uma jornada épica e emocionante com o musical &quot;O Grande Rei&quot; em comemoração aos 10 anos da EDYS, o filme que marcou a infância de muita gente. Baseado no clássico da Disney, este musical deslumbrante transporta o público para as vastas planícies da savana africana com uma mistura mágica de teatro, música e dança.
+          <p className={`text-2xl ${inter.className} w-full lg:text-justify md:text-justify max-md:text-justify sm:text-left max-sm:text-left`}>
+            Prepare-se para uma jornada épica e emocionante com o musical O Grande Rei em comemoração ao Celebration 10 Anos da Edys, o filme que marcou a infância de muita gente.
           </p>
-          <p className={`text-2xl ${inter.className}`}>
+          <p className={`text-2xl ${inter.className} w-full lg:text-justify md:text-justify max-md:text-justify sm:text-left max-sm:text-left`}>
             A história segue o jovem leão Simba, desde seu nascimento como herdeiro do trono até sua luta para reivindicar seu lugar como rei das Terras do Reino.
           </p>
-          <p className={`text-2xl ${inter.className}`}>
+          <p className={`text-2xl ${inter.className} w-full lg:text-justify md:text-justify max-md:text-justify sm:text-left max-sm:text-left`}>
             Venha se maravilhar com a história de coragem, amizade e autodescoberta que conquistou corações em todo o planeta. &quot;O Grande Rei&quot; não é apenas um musical, é uma celebração da vida e da majestade da natureza que vai te deixar sem palavras. Não perca a oportunidade de vivenciar essa obra-prima teatral que é simplesmente imperdível!
           </p>
         </div>
