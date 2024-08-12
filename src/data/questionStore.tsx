@@ -14,13 +14,13 @@ const questions: QuestionStore = {
             </p>
             <br></br>
             <p>
-                E por fim, a compra também pode ser feita através do nosso WhatsApp: <a href="https://wa.me/5585999999999" className="underline" target="_blank">(85) 9 9999-9999</a>.
+                E por fim, a compra também pode ser feita através do nosso WhatsApp: <a href="https://wa.me/5585998552222" className="underline" target="_blank">(85) 9 9855-2222</a>.
             </p>
         </>,
         "Como garanto a minha meia entrada?": <>
-            <p>Estudantes: para ter acesso ao benefício da meia-entrada, o estudante deve apresentar a CIE – Carteira de Identificação Estudantil</p>
+            <p>ESTUDANTES: para ter acesso ao benefício da meia-entrada, o estudante deve apresentar a CIE – Carteira de Identificação Estudantil</p>
             <br></br>
-            <p>Idosos: com idade superior a 60 (sessenta) anos têm direito a meia-entrada. Para comprovação, basta apresentar o documento de identidade.</p>
+            <p>IDOSOS: com idade superior a 60 (sessenta) anos têm direito a meia-entrada. Para comprovação, basta apresentar o documento de identidade.</p>
             <br></br>
             <p>PCD: pessoas com deficiência e um acompanhante, tem direito a meia-entrada. O documento exigido no local de realização do evento para pessoas com necessidades especiais, será:</p>
             <br></br>
@@ -28,7 +28,7 @@ const questions: QuestionStore = {
             <br></br>
             <p>b) Documento emitido pelo Instituto Nacional do Seguro Social - INSS que ateste a aposentadoria de acordo com os critérios estabelecidos na Lei Complementar nº 142, de 8 de maio de 2013.</p>
             <br></br>
-            <p>Jovens de baixa renda: também terão direito a meia-entrada, jovens com idade entre 15 e 29 anos que pertencem às famílias com renda mensal de até dois salários mínimos, inscritas no Cadastro Único para Programas Sociais do Governo Federal - CadÚnico;</p>
+            <p>JOVENS DE BAIXA RENDA: também terão direito a meia-entrada, jovens com idade entre 15 e 29 anos que pertencem às famílias com renda mensal de até dois salários mínimos, inscritas no Cadastro Único para Programas Sociais do Governo Federal - CadÚnico;</p>
             <br></br>
             <p>DOADORES DE SANGUE</p>
             <br></br>
@@ -44,13 +44,29 @@ const questions: QuestionStore = {
         </>,
     },
     "Pagamentos": {
-        "Pergunta": <>
-            <p>Resposta</p>
+        "Como faço para garantir meus ingressos?": <>
+            <p>Os ingressos são vendidos na bilheteria oficial, localizada no <a href="https://maps.app.goo.gl/y13UpbhPABNSDiC2A">Theatro José de Alencar, Fortaleza - CE</a>.</p>
+            <p>Você também pode comprar pelo site ou pelo nosso <a href="https://wa.me/5585998552222" className="underline">whatsapp oficial</a>, e também presencialmente na <a href="https://maps.app.goo.gl/f8cTLNrSvBz9ozJB6" className="underline" target="_blank">nossa sede</a>.</p>
+        </>,
+        "Quais as formas de pagamento?": <>
+            <p>Bilheteria (sem taxas): Dinheiro, cartões de crédito American Express®, Visa, MasterCard, Diners, Hipercard, ELO e cartões de débito Visa Electron, MasterCard, Hipercard e ELO. Vale-Cultura (Sodexo). Site (com taxas): Cartões de crédito American Express®, Visa, MasterCard, Diners, Hipercard e ELO.</p>
         </>,
     },
     "Acessibilidade": {
-        "Pergunta": <>
-            <p>Resposta</p>
+        "O espetáculo conta com recursos de acessibilidade?": <>
+            <p>Sim! O espetáculo conta com libras e audiodescrição em todas as sessões.</p>
+            <p>A acessibilidade em libras e audiodescrição é inserida no Tablet para exibição.</p>
+            <p>Não é necessário solicitar com antecedência, basta notificar em sua chegada ao teatro a necessidade para a equipe técnica responsável pela distribuição e acompanhamento dos PCDs. Essa equipe fica localizada no foyer do teatro em local sinalizado.</p>
+            <p>Além disso, o teatro é equipado com:</p>
+            <br />
+            <p>- 19 lugares para cadeirantes</p>
+            <p>- 18 lugares para acompanhantes</p>
+            <p>- 16 lugares para obeso</p>
+            <p>- Rampa de acesso até a fileira N</p>
+            <p>- Elevador com acesso aos dois andares da casa (plateia e balcão)</p>
+            <p>- Bombeiros que auxiliam no acesso a casa</p>
+            <p>- Banheiros PCD, conforme NBR9050</p>
+            <p>- Libras e audiodescrição em todas as sessões</p>
         </>,
     }
 }
