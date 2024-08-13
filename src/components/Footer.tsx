@@ -98,7 +98,7 @@ export default function Footer() {
 
             <div className="flex flex-row sm:flex-col max-sm:flex-col gap-5 justify-between w-full max-w-6xl px-8 py-4 max-md:px-5 max-md:max-w-full text-xl">
                 <span className={`${berlin.className} text-lemon-yellow-100`}>
-                    Website by Jacó Martins, Letícia Reis & Cauan Victor
+                    Website by Jacó Martins & Letícia Reis
                 </span>
                 <span className={`${berlin.className} text-lemon-yellow-100`}>© Escola de Dança Yaline Saboya, 2024.</span>
             </div>
