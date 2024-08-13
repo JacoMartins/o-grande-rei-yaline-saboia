@@ -123,7 +123,7 @@ export default function Home() {
                   </h3>
                 </div>
               </div>
-            </div> *}
+            </div> */}
 
             <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
               <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
