@@ -101,33 +101,9 @@ export default function Home() {
               <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Inteira</div>
             </div>
 
-            {/* <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
-              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
-                1º Lote
-              </span>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    50,00
-                  </h3>
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    100,00
-                  </h3>
-                </div>
-              </div>
-            </div> */}
-
             <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
               <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
-                2º Lote
+                1º Lote
               </span>
 
               <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
@@ -150,7 +126,7 @@ export default function Home() {
             </div>
             <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
               <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
-                3º Lote
+                2º Lote
               </span>
 
               <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
