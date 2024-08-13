@@ -89,7 +89,7 @@ export default function Home() {
       >
         <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
           <span className={`${inter.className} text-lg`}>22 e 23 de novembro</span>
-          <h4 className="text-2xl">Músical</h4>
+          <h4 className="text-2xl">Musical</h4>
           <h3 className="text-4xl">O Grandei Rei</h3>
         </div>
 
