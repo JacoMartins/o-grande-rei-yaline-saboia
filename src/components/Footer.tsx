@@ -100,7 +100,7 @@ export default function Footer() {
                 <span className={`${berlin.className} text-lemon-yellow-100`}>
                     Website by Jacó Martins & Letícia Reis
                 </span>
-                <span className={`${berlin.className} text-lemon-yellow-100`}>© Escola de Dança Yaline Saboya, 2024.</span>
+                <span className={`${berlin.className} text-lemon-yellow-100`}>© Escola de Dança Yaline Sabóia, 2024.</span>
             </div>
         </footer>
     )
