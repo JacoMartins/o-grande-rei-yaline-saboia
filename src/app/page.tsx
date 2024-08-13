@@ -88,7 +88,7 @@ export default function Home() {
         className="lg:gap-8 md:gap-8 sm:gap-12 max-sm:gap-12"
       >
         <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
-          <span className={`${inter.className} text-lg`}>01 de novembro</span>
+          <span className={`${inter.className} text-lg`}>22 e 23 de novembro</span>
           <h4 className="text-2xl">Músical</h4>
           <h3 className="text-4xl">O Grandei Rei</h3>
         </div>
@@ -101,7 +101,7 @@ export default function Home() {
               <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Inteira</div>
             </div>
 
-            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
+            {/* <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
               <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
                 1º Lote
               </span>
@@ -123,7 +123,7 @@ export default function Home() {
                   </h3>
                 </div>
               </div>
-            </div>
+            </div> *}
 
             <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
               <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
