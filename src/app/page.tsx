@@ -2,7 +2,7 @@ import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
 import banner_pc from '@/assets/images/banner_pc.jpg';
-import banner_mob from '@/assets/images/banner_mob.png';
+import banner_mob from '@/assets/images/banner_mobile.png';
 import { MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
