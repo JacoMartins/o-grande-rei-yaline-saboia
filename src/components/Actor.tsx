@@ -2,25 +2,28 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 
 interface ActorProps {
-    image: any
+    image: any;
+    alt: string;
+    name: string;
+    role: string;
 }
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Actor({ image }: ActorProps) {
+export default function Actor({ image, alt, name, role }: ActorProps) {
     return (
-        <div className="flex flex-col justify-start p-2 w-full rounded-xl bg-bloody-red-600 max-w-xs">
+        <div className="flex flex-col justify-start p-2 max-h-[25rem] min-w-[14rem] rounded-xl bg-bloody-red-600 select-none">
             <Image
                 src={image}
+                alt={alt}
                 width={270}
                 height={360}
-                alt="Isaque Silva como Simba Adulto"
-                className="w-full aspect-[0.75]"
+                className="w-full aspect-[0.75] select-none"
             />
             <div className="flex flex-col p-2">
-                <h4 className="text-2xl text-white">Isaque Silva</h4>
+                <h4 className="text-2xl text-white">{name}</h4>
                 <span className={`text-md text-base text-lemon-yellow-100 ${inter.className}`}>
-                    Simba Adulto
+                    {role}
                 </span>
             </div>
         </div>
