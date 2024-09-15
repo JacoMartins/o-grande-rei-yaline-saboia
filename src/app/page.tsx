@@ -8,6 +8,8 @@ import Section from "@/components/Section";
 import Map from "@/components/Map";
 import simba_adulto from "@/assets/images/simba_adulto.png"
 import Actor from "@/components/Actor";
+import Carousel from "@/components/Carousel";
+import Group from "@/components/Group";
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -59,21 +61,168 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* <Section
+      <Section
         id="elenco"
         title="Elenco"
         bgColor="bg-lemon-yellow-100"
         textColor="text-bloody-red-800"
       >
-        <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-5">
-          <div className="flex flex-row gap-4">
-            <Actor image={simba_adulto} />
-            <Actor image={simba_adulto} />
-            <Actor image={simba_adulto} />
-            <Actor image={simba_adulto} />
-          </div>
+        <span className="text-xl">
+          Conheça os membros do elenco do musical
+        </span>
+        <div className="flex flex-col gap-5 justify-center items-center max-md:flex-col max-md:gap-5 w-full">
+          <Carousel className="w-full max-w-5xl">
+            <Actor
+              image={simba_adulto}
+              name="Arthur Valdez"
+              role="Simba Criança"
+              alt="Arthur Valdez como Simba Criança"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Isaque Ferreira"
+              role="Simba Adulto"
+              alt="Isaque Ferreira como Simba Adulto"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Matheus Macedo"
+              role="Mufasa"
+              alt="Matheus Macedo como Mufasa"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Leon Cavalcante"
+              role="Scar"
+              alt="Leon Cavalcante como Scar"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Isadora Brasil"
+              role="Nala Criança"
+              alt="Isadora Brasil como Nala Criança"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Deanira Sabóia"
+              role="Nala Adulta"
+              alt="Deanira Sabóia como Nala Adulta"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Leonardo Reis"
+              role="Timão"
+              alt="Leonardo Reis como Timão"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Paulo André Reis"
+              role="Pumba"
+              alt="Paulo André Reis como Pumba"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Roberta Santos"
+              role="Rafiki"
+              alt="Roberta SantosRafiki"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Naylica Xavier"
+              role="Zazu"
+              alt="Naylica Xavier como Zazu"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Ana Ruth"
+              role="Sarabi"
+              alt="Ana Ruth como Sarabi"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Lia Nara"
+              role="Serafina"
+              alt="Lia Nara como Serafina"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Natália Vasconcelos"
+              role="Shenzi"
+              alt="Natália Vasconcelos como Shenzi"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Luís Eduardo"
+              role="Banzai"
+              alt="Luís Eduardo como Banzai"
+            />
+            <Actor
+              image={simba_adulto}
+              name="Bruna Tayná"
+              role="Bill"
+              alt="Bruna Tayná como Ed"
+            />
+          </Carousel>
+
+          <Carousel className="w-full max-w-5xl">
+            <Group
+              image={simba_adulto}
+              name="Leopardos"
+              role=""
+              alt="Grupo dos Leopardos"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Zebras"
+              role=""
+              alt="Grupo dos Zebras"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Pássaros"
+              role=""
+              alt="Grupo dos Pássaros"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Antílopes e Leoas Crianças"
+              role=""
+              alt="Grupo dos Antílopes e Leoas Crianças"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Flamingos"
+              role=""
+              alt="Grupo dos Flamingos"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Hienas"
+              role=""
+              alt="Grupo dos Hienas"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Leoas Jovens"
+              role=""
+              alt="Grupo dos Leoas Jovens"
+            />
+
+            <Group
+              image={simba_adulto}
+              name="Gnus"
+              role=""
+              alt="Grupo dos Gnus"
+            />
+          </Carousel>
         </div>
-      </Section> */}
+      </Section>
 
       <Section
         id="ingressos"
@@ -180,6 +329,8 @@ export default function Home() {
         <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
           {/* <AccordionDrawer /> */}
           <span className="text-2xl">(Em construção!)</span>
+          
+
         </div>
       </Section>
 
