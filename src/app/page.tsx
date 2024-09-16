@@ -7,7 +7,13 @@ import { MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
 import simba_adulto from "@/assets/images/simba_adulto.png"
+import simba_crianca from "@/assets/images/simba_crianca.png"
+import nala_crianca from "@/assets/images/nala_crianca.png"
+import nala_adulta from "@/assets/images/nala_adulta.png"
+import timon from "@/assets/images/timon.webp"
 import ed from "@/assets/images/ed.png"
+import scar from "@/assets/images/scar.png"
+import mufasa from "@/assets/images/mufasa.png"
 import Actor from "@/components/Actor";
 import Carousel from "@/components/Carousel";
 import Group from "@/components/Group";
@@ -74,50 +80,50 @@ export default function Home() {
         <div className="flex flex-col gap-5 justify-center items-center max-md:flex-col max-md:gap-5 w-full">
           <Carousel className="w-full max-w-5xl">
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={simba_crianca}
+              characterImage={simba_crianca}
               name="Arthur Valdez"
               role="Simba Criança"
               alt="Arthur Valdez como Simba Criança"
             />
             <Actor
-              actorImage={ed}
+              actorImage={simba_adulto}
               characterImage={simba_adulto}
               name="Isaque Ferreira"
               role="Simba Adulto"
               alt="Isaque Ferreira como Simba Adulto"
             />
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={mufasa}
+              characterImage={mufasa}
               name="Matheus Macedo"
               role="Mufasa"
               alt="Matheus Macedo como Mufasa"
             />
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={scar}
+              characterImage={scar}
               name="Leon Cavalcante"
               role="Scar"
               alt="Leon Cavalcante como Scar"
             />
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={nala_crianca}
+              characterImage={nala_crianca}
               name="Isadora Brasil"
               role="Nala Criança"
               alt="Isadora Brasil como Nala Criança"
             />
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={nala_adulta}
+              characterImage={nala_adulta}
               name="Deanira Sabóia"
               role="Nala Adulta"
               alt="Deanira Sabóia como Nala Adulta"
             />
             <Actor
-              actorImage={ed}
-              characterImage={simba_adulto}
+              actorImage={timon}
+              characterImage={timon}
               name="Leonardo Reis"
               role="Timão"
               alt="Leonardo Reis como Timão"
