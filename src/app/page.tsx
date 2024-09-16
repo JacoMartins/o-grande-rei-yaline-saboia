@@ -7,6 +7,7 @@ import { MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
 import simba_adulto from "@/assets/images/simba_adulto.png"
+import ed from "@/assets/images/ed.png"
 import Actor from "@/components/Actor";
 import Carousel from "@/components/Carousel";
 import Group from "@/components/Group";
@@ -73,91 +74,106 @@ export default function Home() {
         <div className="flex flex-col gap-5 justify-center items-center max-md:flex-col max-md:gap-5 w-full">
           <Carousel className="w-full max-w-5xl">
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Arthur Valdez"
               role="Simba Criança"
               alt="Arthur Valdez como Simba Criança"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Isaque Ferreira"
               role="Simba Adulto"
               alt="Isaque Ferreira como Simba Adulto"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Matheus Macedo"
               role="Mufasa"
               alt="Matheus Macedo como Mufasa"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Leon Cavalcante"
               role="Scar"
               alt="Leon Cavalcante como Scar"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Isadora Brasil"
               role="Nala Criança"
               alt="Isadora Brasil como Nala Criança"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Deanira Sabóia"
               role="Nala Adulta"
               alt="Deanira Sabóia como Nala Adulta"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Leonardo Reis"
               role="Timão"
               alt="Leonardo Reis como Timão"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Paulo André Reis"
               role="Pumba"
               alt="Paulo André Reis como Pumba"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Roberta Santos"
               role="Rafiki"
               alt="Roberta SantosRafiki"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Naylica Xavier"
               role="Zazu"
               alt="Naylica Xavier como Zazu"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Ana Ruth"
               role="Sarabi"
               alt="Ana Ruth como Sarabi"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Lia Nara"
               role="Serafina"
               alt="Lia Nara como Serafina"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Natália Vasconcelos"
               role="Shenzi"
               alt="Natália Vasconcelos como Shenzi"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Luís Eduardo"
               role="Banzai"
               alt="Luís Eduardo como Banzai"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={simba_adulto}
               name="Bruna Tayná"
               role="Bill"
               alt="Bruna Tayná como Ed"

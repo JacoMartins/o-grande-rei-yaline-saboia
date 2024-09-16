@@ -78,7 +78,7 @@ export default function Carousel({ className, children }: RowProps) {
       <div className="overflow-x-hidden py-1">
         <div
           ref={containerRef}
-          className={`w-full flex flex-row gap-2 transform transition-transform duration-300`}
+          className={`w-full flex flex-row gap-2 transform transition-transform duration-300 overflow-hidden`}
           onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onMouseMove={handleMove}
           onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd} onTouchMove={handleMove}
         >
