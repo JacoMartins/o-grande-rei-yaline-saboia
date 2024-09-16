@@ -2,7 +2,7 @@ import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
 import banner_pc from '@/assets/images/banner_pc.jpg';
-import banner_mob from '@/assets/images/banner_mobile.png';
+import banner_mob from '@/assets/images/banner_mobile.jpg';
 import { MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
+      {/* <Section
         id="elenco"
         title="Elenco"
         bgColor="bg-lemon-yellow-100"
@@ -222,7 +222,7 @@ export default function Home() {
             />
           </Carousel>
         </div>
-      </Section>
+      </Section> */}
 
       <Section
         id="ingressos"
