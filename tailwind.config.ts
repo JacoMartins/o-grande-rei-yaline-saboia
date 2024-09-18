@@ -89,10 +89,20 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "flip-card": {
+          from: { transform: "rotateY(0deg)" },
+          to: { transform: "rotateY(180deg)" }
+        },
+        "flip-card-back": {
+          from: { transform: "rotateY(180deg)" },
+          to: { transform: "rotateY(0deg)" }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "flip-card": "flip-card 1s ease-in-out",
+        "flip-card-back": "flip-card-back 1s ease-in-out"
       },
 
     },

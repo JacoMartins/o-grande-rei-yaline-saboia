@@ -1,15 +1,39 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
-import banner_pc from '@/assets/images/banner_pc.jpg';
-import banner_mob from '@/assets/images/banner_mobile.jpg';
 import { MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
-import simba_adulto from "@/assets/images/simba_adulto.png"
 import Actor from "@/components/Actor";
 import Carousel from "@/components/Carousel";
 import Group from "@/components/Group";
+
+import banner_pc from '@/assets/images/banner_pc.jpg';
+import banner_mob from '@/assets/images/banner_mobile.jpg';
+import simba_adulto from "@/assets/images/characters/simba_adulto.png"
+import simba_crianca from "@/assets/images/characters/simba_crianca.png"
+import nala_crianca from "@/assets/images/characters/nala_crianca.png"
+import nala_adulta from "@/assets/images/characters/nala_adulta.png"
+import timon from "@/assets/images/characters/timon.webp"
+import ed from "@/assets/images/characters/ed.png"
+import scar from "@/assets/images/characters/scar.png"
+import mufasa from "@/assets/images/characters/mufasa.png"
+import pumba from "@/assets/images/characters/pumba.png"
+import rafiki from "@/assets/images/characters/rafiki.webp"
+import zazu from "@/assets/images/characters/zazu.png"
+import sarabi from "@/assets/images/characters/sarabi.png"
+import serafina from "@/assets/images/characters/serafina.png"
+import shenzi from "@/assets/images/characters/shenzi.png"
+import banzai from "@/assets/images/characters/banzai.png"
+import bill from "@/assets/images/characters/bill.png"
+import leopardo from "@/assets/images/characters/leopardo.png"
+import zebra from "@/assets/images/characters/zebras.png"
+import bird from "@/assets/images/characters/bird.png"
+import antilope from "@/assets/images/characters/antilope.png"
+import flamingos from "@/assets/images/characters/flamingos.png"
+import hienas from "@/assets/images/characters/hienas.png"
+import leoas_jovens from "@/assets/images/characters/leoas_jovens.png"
+import gnus from "@/assets/images/characters/gnus.png"
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -73,149 +97,171 @@ export default function Home() {
         <div className="flex flex-col gap-5 justify-center items-center max-md:flex-col max-md:gap-5 w-full">
           <Carousel className="w-full max-w-5xl">
             <Actor
-              image={simba_adulto}
+              actorImage={simba_crianca}
+              characterImage={simba_crianca}
               name="Arthur Valdez"
               role="Simba Criança"
               alt="Arthur Valdez como Simba Criança"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={simba_adulto}
+              characterImage={simba_adulto}
               name="Isaque Ferreira"
               role="Simba Adulto"
               alt="Isaque Ferreira como Simba Adulto"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={mufasa}
+              characterImage={mufasa}
               name="Matheus Macedo"
               role="Mufasa"
               alt="Matheus Macedo como Mufasa"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={scar}
+              characterImage={scar}
               name="Leon Cavalcante"
               role="Scar"
               alt="Leon Cavalcante como Scar"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={nala_crianca}
+              characterImage={nala_crianca}
               name="Isadora Brasil"
               role="Nala Criança"
               alt="Isadora Brasil como Nala Criança"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={nala_adulta}
+              characterImage={nala_adulta}
               name="Deanira Sabóia"
               role="Nala Adulta"
               alt="Deanira Sabóia como Nala Adulta"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={timon}
+              characterImage={timon}
               name="Leonardo Reis"
               role="Timão"
               alt="Leonardo Reis como Timão"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={pumba}
+              characterImage={pumba}
               name="Paulo André Reis"
               role="Pumba"
               alt="Paulo André Reis como Pumba"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={rafiki}
+              characterImage={rafiki}
               name="Roberta Santos"
               role="Rafiki"
               alt="Roberta SantosRafiki"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={zazu}
+              characterImage={zazu}
               name="Naylica Xavier"
               role="Zazu"
               alt="Naylica Xavier como Zazu"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={sarabi}
+              characterImage={sarabi}
               name="Ana Ruth"
               role="Sarabi"
               alt="Ana Ruth como Sarabi"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={serafina}
+              characterImage={serafina}
               name="Lia Nara"
               role="Serafina"
               alt="Lia Nara como Serafina"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={shenzi}
+              characterImage={shenzi}
               name="Natália Vasconcelos"
               role="Shenzi"
               alt="Natália Vasconcelos como Shenzi"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={ed}
+              characterImage={ed}
               name="Luís Eduardo"
-              role="Banzai"
-              alt="Luís Eduardo como Banzai"
+              role="Ed"
+              alt="Luís Eduardo como Ed"
             />
             <Actor
-              image={simba_adulto}
+              actorImage={banzai}
+              characterImage={banzai}
+              name="Kátia Lemos"
+              role="Banzai"
+              alt="Kátia Lemos como Banzai"
+            />
+            <Actor
+              actorImage={bill}
+              characterImage={bill}
               name="Bruna Tayná"
               role="Bill"
-              alt="Bruna Tayná como Ed"
+              alt="Bruna Tayná como Bill"
             />
           </Carousel>
 
           <Carousel className="w-full max-w-5xl">
             <Group
-              image={simba_adulto}
+              image={leopardo}
               name="Leopardos"
               role=""
               alt="Grupo dos Leopardos"
             />
 
             <Group
-              image={simba_adulto}
+              image={zebra}
               name="Zebras"
               role=""
               alt="Grupo dos Zebras"
             />
 
             <Group
-              image={simba_adulto}
+              image={bird}
               name="Pássaros"
               role=""
               alt="Grupo dos Pássaros"
             />
 
             <Group
-              image={simba_adulto}
+              image={antilope}
               name="Antílopes e Leoas Crianças"
               role=""
               alt="Grupo dos Antílopes e Leoas Crianças"
             />
 
             <Group
-              image={simba_adulto}
+              image={flamingos}
               name="Flamingos"
               role=""
               alt="Grupo dos Flamingos"
             />
 
             <Group
-              image={simba_adulto}
+              image={hienas}
               name="Hienas"
               role=""
               alt="Grupo dos Hienas"
             />
 
             <Group
-              image={simba_adulto}
+              image={leoas_jovens}
               name="Leoas Jovens"
               role=""
               alt="Grupo dos Leoas Jovens"
             />
 
             <Group
-              image={simba_adulto}
+              image={gnus}
               name="Gnus"
               role=""
               alt="Grupo dos Gnus"
@@ -329,11 +375,10 @@ export default function Home() {
         <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
           {/* <AccordionDrawer /> */}
           <span className="text-2xl">(Em construção!)</span>
-          
+
 
         </div>
       </Section>
-
     </main >
   );
 }

@@ -60,13 +60,13 @@ export default function Header() {
                 >
                     Sinopse
                 </a>
-                {/* <a 
+                <a 
                     className="text-nowrap"
                     href="#elenco"
                     onClick={handleAnchorClick}
                 >
                     Elenco
-                </a> */}
+                </a>
                 <a 
                     className="text-nowrap"
                     href="#ingressos"
