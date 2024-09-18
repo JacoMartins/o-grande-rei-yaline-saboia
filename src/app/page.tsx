@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
+      {/* <Section
         id="elenco"
         title="Elenco"
         bgColor="bg-lemon-yellow-100"
@@ -268,7 +268,7 @@ export default function Home() {
             />
           </Carousel>
         </div>
-      </Section>
+      </Section> */}
 
       <Section
         id="ingressos"
