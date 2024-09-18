@@ -10,6 +10,7 @@ import Group from "@/components/Group";
 
 import banner_pc from '@/assets/images/banner_pc.jpg';
 import banner_mob from '@/assets/images/banner_mobile.jpg';
+
 import simba_adulto from "@/assets/images/characters/simba_adulto.png"
 import simba_crianca from "@/assets/images/characters/simba_crianca.png"
 import nala_crianca from "@/assets/images/characters/nala_crianca.png"
@@ -34,6 +35,12 @@ import flamingos from "@/assets/images/characters/flamingos.png"
 import hienas from "@/assets/images/characters/hienas.png"
 import leoas_jovens from "@/assets/images/characters/leoas_jovens.png"
 import gnus from "@/assets/images/characters/gnus.png"
+
+import adce from "@/assets/images/logos/adce.png"
+import govce from "@/assets/images/logos/govce.png"
+import secult from "@/assets/images/logos/secult.png"
+import theatro from "@/assets/images/logos/theatro.png"
+import idm from "@/assets/images/logos/idm-branco.png"
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -366,17 +373,55 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
+      {/* <Section
         id="faq"
         title="Dúvidas Frequentes"
         bgColor="bg-strong-wood-700"
         textColor="text-lemon-yellow-100"
       >
         <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
-          {/* <AccordionDrawer /> */}
-          <span className="text-2xl">(Em construção!)</span>
+          
 
+        </div>
+      </Section> */}
 
+      <Section
+        id="apoio"
+        title="Apoio"
+        bgColor="bg-strong-wood-700"
+        textColor="text-lemon-yellow-100"
+      >
+        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col">
+          <Image src={idm}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={theatro}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={secult}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={govce}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={adce}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
         </div>
       </Section>
     </main >
