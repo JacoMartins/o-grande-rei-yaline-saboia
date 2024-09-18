@@ -92,12 +92,19 @@ export default function Footer() {
                                 >
                                     Ingressos
                                 </a>
-                                <a
+                                {/* <a
                                     className="font-light underline leading-tight"
                                     href="#faq"
                                     onClick={handleAnchorClick}
                                 >
                                     Dúvidas Frequentes
+                                </a> */}
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#apoio"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Apoio
                                 </a>
                             </nav>
                         </div>

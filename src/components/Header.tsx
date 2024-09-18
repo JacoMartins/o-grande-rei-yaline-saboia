@@ -74,12 +74,19 @@ export default function Header() {
                 >
                     Ingressos
                 </a>
-                <a 
+                {/* <a 
                     className="text-nowrap"
                     href="#faq"
                     onClick={handleAnchorClick}
                 >
                     Dúvidas
+                </a> */}
+                <a 
+                    className="text-nowrap"
+                    href="#apoio"
+                    onClick={handleAnchorClick}
+                >
+                    Apoio
                 </a>
             </nav>
         </header>
