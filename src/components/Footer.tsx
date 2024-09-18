@@ -80,6 +80,13 @@ export default function Footer() {
                                 </a>
                                 <a
                                     className="font-light underline leading-tight"
+                                    href="#elenco"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Elenco
+                                </a>
+                                <a
+                                    className="font-light underline leading-tight"
                                     href="#ingressos"
                                     onClick={handleAnchorClick}
                                 >
