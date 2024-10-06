@@ -10,11 +10,12 @@ export default function Audio({ audioSource }: AudioProps) {
     const [startMusic, setStartMusic] = useState(false)
     const audioRef = createRef() as RefObject<HTMLAudioElement>
 
-    addEventListener("mousedown", () => {
-        setStartMusic(true)
-    })
     
     useEffect(() => {
+        window.addEventListener("mousedown", () => {
+            setStartMusic(true)
+        })
+        
         if (audioRef) {
             if (audioRef.current && startMusic) {
                 audioRef.current.play()
