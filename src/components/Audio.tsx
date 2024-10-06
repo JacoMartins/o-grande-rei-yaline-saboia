@@ -10,7 +10,7 @@ export default function Audio({ audioSource }: AudioProps) {
     const [startMusic, setStartMusic] = useState(false)
     const audioRef = createRef() as RefObject<HTMLAudioElement>
 
-    window.addEventListener("mousedown", () => {
+    addEventListener("mousedown", () => {
         setStartMusic(true)
     })
     
