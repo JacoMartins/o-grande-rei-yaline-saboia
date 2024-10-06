@@ -9,7 +9,6 @@ interface AudioProps {
 export default function Audio({ audioSource }: AudioProps) {
     const [startMusic, setStartMusic] = useState(false)
     const audioRef = createRef() as RefObject<HTMLAudioElement>
-
     
     useEffect(() => {
         window.addEventListener("mousedown", () => {
