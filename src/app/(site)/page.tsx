@@ -36,9 +36,10 @@ import hienas from "@/assets/images/characters/hienas.png"
 import leoas_jovens from "@/assets/images/characters/leoas_jovens.png"
 import gnus from "@/assets/images/characters/gnus.png"
 
-import banzai_elenco from "@/assets/images/elenco/ed.png"
+import banzai_elenco from "@/assets/images/elenco/banzai.png"
 import bill_elenco from "@/assets/images/elenco/bill.png"
-import ed_elenco from "@/assets/images/elenco/banzai.png"
+import ed_elenco from "@/assets/images/elenco/ed.png"
+import mufasa_elenco from "@/assets/images/elenco/mufasa.png"
 import nala_adulta_elenco from "@/assets/images/elenco/nala_adulta.png"
 import nala_crianca_elenco from "@/assets/images/elenco/nala_crianca.png"
 import pumba_elenco from "@/assets/images/elenco/pumba.png"
@@ -70,6 +71,9 @@ import govce from "@/assets/images/logos/govce.png"
 import secult from "@/assets/images/logos/secult.png"
 import theatro from "@/assets/images/logos/theatro.png"
 import idm from "@/assets/images/logos/idm-branco.png"
+import koten from "@/assets/images/logos/koten.png"
+
+import Audio from "@/components/Audio";
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -105,6 +109,7 @@ export default function Home() {
         bgColor="bg-bloody-red-800"
         textColor="text-lemon-yellow-100"
       >
+        <Audio audioSource="/assets/audio/reileao.mp3" />
         <div className="flex flex-col gap-8 max-w-3xl max-md:max-w-full">
           <p className={`text-2xl ${inter.className} w-full lg:text-justify md:text-justify max-md:text-justify sm:text-left max-sm:text-left`}>
             Prepare-se para uma jornada épica e emocionante com o musical O Grande Rei em comemoração ao Celebration 10 Anos da Edys, o filme que marcou a infância de muita gente.
@@ -147,7 +152,7 @@ export default function Home() {
               alt="Isaque Ferreira como Simba Adulto"
             />
             <Actor
-              actorImage={mufasa}
+              actorImage={mufasa_elenco}
               characterImage={mufasa}
               name="Matheus Macedo"
               role="Mufasa"
@@ -446,6 +451,15 @@ export default function Home() {
         </div>
       </Section> */}
 
+      {/* <Section
+        id="ficha"
+        title="Ficha Técnica"
+        bgColor="bg-green-900"
+        textColor="text-lemon-yellow-100"
+      >
+
+      </Section> */}
+
       <Section
         id="apoio"
         title="Apoio"
@@ -483,12 +497,18 @@ export default function Home() {
             alt=""
             className="w-[8rem] h-[8rem]"
           />
+          <Image src={koten}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
         </div>
-        <h2
+        {/* <h2
           className="lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-center"
         >
           Patrocínio
-        </h2>
+        </h2> */}
       </Section>
     </main >
   );
