@@ -15,7 +15,7 @@ export default function Audio({ audioSource }: AudioProps) {
         window.addEventListener("mousedown", () => {
             setStartMusic(true)
         })
-        
+
         if (audioRef) {
             if (audioRef.current && startMusic) {
                 audioRef.current.play()
@@ -24,7 +24,7 @@ export default function Audio({ audioSource }: AudioProps) {
     }, [audioRef, startMusic])
 
     return (
-        <audio id="al" ref={audioRef} autoPlay>
+        <audio id="al" ref={audioRef} autoPlay loop>
             <source src={audioSource} type='audio/mp3' />
         </audio>
     )
