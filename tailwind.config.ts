@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      aspectRatio: {
+        'a4': '1 / 1.41'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -104,7 +107,12 @@ const config = {
         "flip-card": "flip-card 1s ease-in-out",
         "flip-card-back": "flip-card-back 1s ease-in-out"
       },
-
+      width: {
+        a4: "210mm",
+      },
+      height: {
+        a4: "297mm"
+      }
     },
     plugins: [require("tailwindcss-animate")],
   }

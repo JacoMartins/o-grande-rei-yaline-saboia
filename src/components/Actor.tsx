@@ -19,13 +19,13 @@ export default function Actor({ actorImage, characterImage, alt, name, role }: A
         <div className="flip-card">
             <div className="flip-card-inner h-[25rem] min-w-[14rem]">
                 <div className="flex flex-col justify-start p-2 rounded-xl bg-bloody-red-600 select-none flip-card-front">
-                    <figure className="flex flex-col justify-center items-center w-full aspect-[0.75] overflow-hidden select-none">
+                    <figure className="flex flex-col justify-center items-center w-full aspect-[0.75] overflow-hidden rounded select-none bg-orange-100">
                         <Image
                             src={actorImage}
                             alt={alt}
                             width={actorImage.width}
                             height={actorImage.height}
-                            className="object-cover w-full"
+                            className="object-cover h-full"
                         />
                     </figure>
                     <div className="flex flex-col p-2">

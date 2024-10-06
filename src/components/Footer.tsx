@@ -106,6 +106,13 @@ export default function Footer() {
                                 >
                                     Apoio
                                 </a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="/programa"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Programa
+                                </a>
                             </nav>
                         </div>
                     </div>

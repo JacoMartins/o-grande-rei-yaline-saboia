@@ -2,7 +2,8 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 
 interface GroupProps {
-    image: any
+    characterImage: any;
+    actorsImage: any;
     name: string;
     role: string;
     alt: string;
@@ -10,18 +11,18 @@ interface GroupProps {
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Group({ image, name, role, alt }: GroupProps) {
+export default function Group({ characterImage, actorsImage, name, role, alt }: GroupProps) {
     return (
         <div className="flip-card">
             <div className="flip-card-inner min-h-[20rem] min-w-[19rem] max-w-[19rem]">
                 <div className="flex flex-col justify-start p-2 min-w-[19rem] max-w-[19rem] rounded-xl bg-bloody-red-600 select-none flip-card-front">
-                    <figure className="flex flex-col justify-center items-center w-full overflow-hidden aspect-square select-none">
+                    <figure className="flex flex-col justify-center items-center w-full overflow-hidden rounded aspect-square select-none">
                         <Image
-                            src={image}
+                            src={actorsImage}
                             width={270}
                             height={360}
                             alt={alt}
-                            className="w-full"
+                            className="object-cover w-full"
                         />
                     </figure>
                     <div className="flex flex-col p-2">
@@ -34,7 +35,7 @@ export default function Group({ image, name, role, alt }: GroupProps) {
                 <div className="flex flex-col justify-start p-2 min-w-[19rem] max-w-[19rem] rounded-xl bg-bloody-red-600 select-none flip-card-back">
                     <figure className="flex flex-col justify-center items-center w-full overflow-hidden aspect-square select-none">
                         <Image
-                            src={image}
+                            src={characterImage}
                             width={270}
                             height={360}
                             alt={alt}

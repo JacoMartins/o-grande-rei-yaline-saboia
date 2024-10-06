@@ -23,18 +23,47 @@ import pumba from "@/assets/images/characters/pumba.png"
 import rafiki from "@/assets/images/characters/rafiki.webp"
 import zazu from "@/assets/images/characters/zazu.png"
 import sarabi from "@/assets/images/characters/sarabi.png"
-import serafina from "@/assets/images/characters/serafina.png"
+import sarafina from "@/assets/images/characters/sarafina.png"
 import shenzi from "@/assets/images/characters/shenzi.png"
 import banzai from "@/assets/images/characters/banzai.png"
 import bill from "@/assets/images/characters/bill.png"
 import leopardo from "@/assets/images/characters/leopardo.png"
 import zebra from "@/assets/images/characters/zebras.png"
 import bird from "@/assets/images/characters/bird.png"
-import antilope from "@/assets/images/characters/antilope.png"
+import antilope from "@/assets/images/characters/antilope_solo.png"
 import flamingos from "@/assets/images/characters/flamingos.png"
 import hienas from "@/assets/images/characters/hienas.png"
 import leoas_jovens from "@/assets/images/characters/leoas_jovens.png"
 import gnus from "@/assets/images/characters/gnus.png"
+
+import banzai_elenco from "@/assets/images/elenco/ed.png"
+import bill_elenco from "@/assets/images/elenco/bill.png"
+import ed_elenco from "@/assets/images/elenco/banzai.png"
+import nala_adulta_elenco from "@/assets/images/elenco/nala_adulta.png"
+import nala_crianca_elenco from "@/assets/images/elenco/nala_crianca.png"
+import pumba_elenco from "@/assets/images/elenco/pumba.png"
+import rafiki_elenco from "@/assets/images/elenco/rafiki.png"
+import sarafina_elenco from "@/assets/images/elenco/sarafina.png"
+import sarabi_elenco from "@/assets/images/elenco/sarabi.png"
+import scar_elenco from "@/assets/images/elenco/scar.png"
+import shenzi_elenco from "@/assets/images/elenco/shenzi.png"
+import simba_adulto_elenco from "@/assets/images/elenco/simba_adulto.png"
+import simba_crianca_elenco from "@/assets/images/elenco/simba_crianca.png"
+import timao_elenco from "@/assets/images/elenco/timao.png"
+import zazu_elenco from "@/assets/images/elenco/zazu.png"
+
+import antilopes_elenco from "@/assets/images/elenco/antilopes.png"
+import flamingos_elenco from "@/assets/images/elenco/flamingos.png"
+import gnus_elenco from "@/assets/images/elenco/gnus.png"
+import hienas_quarteto_elenco from "@/assets/images/elenco/hienas_quarteto.png"
+import hienas_elenco from "@/assets/images/elenco/hienas.png"
+import leoas_criancas_elenco from "@/assets/images/elenco/leoas_criancas.png"
+import leoas_jovens_elenco from "@/assets/images/elenco/leoas_jovens.png"
+import leopardos_elenco from "@/assets/images/elenco/leopardos.png"
+import passaros_elenco from "@/assets/images/elenco/passaros.png"
+import zebras_elenco from "@/assets/images/elenco/zebras.png"
+import canto_das_pastagem_elenco from "@/assets/images/elenco/canto_das_pastagem.png"
+import esta_em_ti_thembas_elenco from "@/assets/images/elenco/esta_em_ti_thembas.png"
 
 import adce from "@/assets/images/logos/adce.png"
 import govce from "@/assets/images/logos/govce.png"
@@ -43,7 +72,7 @@ import theatro from "@/assets/images/logos/theatro.png"
 import idm from "@/assets/images/logos/idm-branco.png"
 
 const inter = Inter({ subsets: ['latin'] });
-const berlin = localFont({ src: '../assets/fonts/BerlinSansFB-Regular.ttf' });
+const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' });
 
 export default function Home() {
   return (
@@ -98,20 +127,20 @@ export default function Home() {
         bgColor="bg-lemon-yellow-100"
         textColor="text-bloody-red-800"
       >
-        <span className="text-xl">
+        <span className="lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-center">
           Conheça os membros do elenco do musical
         </span>
         <div className="flex flex-col gap-5 justify-center items-center max-md:flex-col max-md:gap-5 w-full">
           <Carousel className="w-full max-w-5xl">
             <Actor
-              actorImage={simba_crianca}
+              actorImage={simba_crianca_elenco}
               characterImage={simba_crianca}
               name="Arthur Valdez"
               role="Simba Criança"
               alt="Arthur Valdez como Simba Criança"
             />
             <Actor
-              actorImage={simba_adulto}
+              actorImage={simba_adulto_elenco}
               characterImage={simba_adulto}
               name="Isaque Ferreira"
               role="Simba Adulto"
@@ -125,91 +154,91 @@ export default function Home() {
               alt="Matheus Macedo como Mufasa"
             />
             <Actor
-              actorImage={scar}
+              actorImage={scar_elenco}
               characterImage={scar}
               name="Leon Cavalcante"
               role="Scar"
               alt="Leon Cavalcante como Scar"
             />
             <Actor
-              actorImage={nala_crianca}
+              actorImage={nala_crianca_elenco}
               characterImage={nala_crianca}
               name="Isadora Brasil"
               role="Nala Criança"
               alt="Isadora Brasil como Nala Criança"
             />
             <Actor
-              actorImage={nala_adulta}
+              actorImage={nala_adulta_elenco}
               characterImage={nala_adulta}
               name="Deanira Sabóia"
               role="Nala Adulta"
               alt="Deanira Sabóia como Nala Adulta"
             />
             <Actor
-              actorImage={timon}
+              actorImage={timao_elenco}
               characterImage={timon}
               name="Leonardo Reis"
               role="Timão"
               alt="Leonardo Reis como Timão"
             />
             <Actor
-              actorImage={pumba}
+              actorImage={pumba_elenco}
               characterImage={pumba}
               name="Paulo André Reis"
               role="Pumba"
               alt="Paulo André Reis como Pumba"
             />
             <Actor
-              actorImage={rafiki}
+              actorImage={rafiki_elenco}
               characterImage={rafiki}
               name="Roberta Santos"
               role="Rafiki"
               alt="Roberta SantosRafiki"
             />
             <Actor
-              actorImage={zazu}
+              actorImage={zazu_elenco}
               characterImage={zazu}
               name="Naylica Xavier"
               role="Zazu"
               alt="Naylica Xavier como Zazu"
             />
             <Actor
-              actorImage={sarabi}
+              actorImage={sarabi_elenco}
               characterImage={sarabi}
               name="Ana Ruth"
               role="Sarabi"
               alt="Ana Ruth como Sarabi"
             />
             <Actor
-              actorImage={serafina}
-              characterImage={serafina}
+              actorImage={sarafina_elenco}
+              characterImage={sarafina}
               name="Lia Nara"
-              role="Serafina"
-              alt="Lia Nara como Serafina"
+              role="Sarafina"
+              alt="Lia Nara como Sarafina"
             />
             <Actor
-              actorImage={shenzi}
+              actorImage={shenzi_elenco}
               characterImage={shenzi}
               name="Natália Vasconcelos"
               role="Shenzi"
               alt="Natália Vasconcelos como Shenzi"
             />
             <Actor
-              actorImage={ed}
+              actorImage={ed_elenco}
               characterImage={ed}
-              name="Luís Eduardo"
-              role="Ed"
-              alt="Luís Eduardo como Ed"
-            />
-            <Actor
-              actorImage={banzai}
-              characterImage={banzai}
               name="Kátia Lemos"
-              role="Banzai"
-              alt="Kátia Lemos como Banzai"
+              role="Ed"
+              alt="Kátia Lemos como Ed"
             />
             <Actor
-              actorImage={bill}
+              actorImage={banzai_elenco}
+              characterImage={banzai}
+              name="Luís Eduardo"
+              role="Banzai"
+              alt="Luís Eduardo como Banzai"
+            />
+            <Actor
+              actorImage={bill_elenco}
               characterImage={bill}
               name="Bruna Tayná"
               role="Bill"
@@ -219,57 +248,89 @@ export default function Home() {
 
           <Carousel className="w-full max-w-5xl">
             <Group
-              image={leopardo}
+              characterImage={leopardo}
+              actorsImage={leopardos_elenco}
               name="Leopardos"
               role=""
               alt="Grupo dos Leopardos"
             />
 
             <Group
-              image={zebra}
+              characterImage={zebra}
+              actorsImage={zebras_elenco}
               name="Zebras"
               role=""
               alt="Grupo dos Zebras"
             />
 
             <Group
-              image={bird}
+              characterImage={bird}
+              actorsImage={passaros_elenco}
               name="Pássaros"
               role=""
               alt="Grupo dos Pássaros"
             />
 
             <Group
-              image={antilope}
-              name="Antílopes e Leoas Crianças"
+              characterImage={antilope}
+              actorsImage={antilopes_elenco}
+              name="Antílopes"
               role=""
-              alt="Grupo dos Antílopes e Leoas Crianças"
+              alt="Grupo dos Antílopes"
             />
 
             <Group
-              image={flamingos}
-              name="Flamingos"
+              characterImage={nala_crianca}
+              actorsImage={leoas_criancas_elenco}
+              name="Leoas Crianças"
               role=""
-              alt="Grupo dos Flamingos"
+              alt="Grupo das Leoas Crianças"
             />
 
             <Group
-              image={hienas}
-              name="Hienas"
-              role=""
-              alt="Grupo dos Hienas"
-            />
-
-            <Group
-              image={leoas_jovens}
+              characterImage={leoas_jovens}
+              actorsImage={leoas_jovens_elenco}
               name="Leoas Jovens"
               role=""
               alt="Grupo dos Leoas Jovens"
             />
 
             <Group
-              image={gnus}
+              characterImage={hienas}
+              actorsImage={hienas_quarteto_elenco}
+              name="Hienas"
+              role=""
+              alt="Grupo dos Hienas"
+            />
+
+            <Group
+              characterImage={flamingos}
+              actorsImage={flamingos_elenco}
+              name="Flamingos"
+              role=""
+              alt="Grupo dos Flamingos"
+            />
+
+            <Group
+              characterImage={gnus}
+              actorsImage={gnus_elenco}
               name="Gnus"
+              role=""
+              alt="Grupo dos Gnus"
+            />
+
+            <Group
+              characterImage={canto_das_pastagem_elenco}
+              actorsImage={canto_das_pastagem_elenco}
+              name="Canto das Pastagem"
+              role=""
+              alt="Grupo do Canto das Pastagem"
+            />
+
+            <Group
+              characterImage={esta_em_ti_thembas_elenco}
+              actorsImage={esta_em_ti_thembas_elenco}
+              name="Está em ti (Thembas)"
               role=""
               alt="Grupo dos Gnus"
             />
@@ -391,12 +452,12 @@ export default function Home() {
         bgColor="bg-strong-wood-700"
         textColor="text-lemon-yellow-100"
       >
-        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col">
+        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center">
           <Image src={idm}
             height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[10rem] h-[10rem]"
           />
           <Image src={theatro}
             height={540}
@@ -408,7 +469,7 @@ export default function Home() {
             height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[9rem] h-[9rem]"
           />
           <Image src={govce}
             height={540}
@@ -423,6 +484,11 @@ export default function Home() {
             className="w-[8rem] h-[8rem]"
           />
         </div>
+        <h2
+          className="lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-center"
+        >
+          Patrocínio
+        </h2>
       </Section>
     </main >
   );

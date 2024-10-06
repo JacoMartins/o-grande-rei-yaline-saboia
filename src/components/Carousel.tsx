@@ -86,7 +86,7 @@ export default function Carousel({ className, children }: RowProps) {
         </div>
       </div>
 
-      <div className="flex flex-row justify-between items-center p-2 text-bg-bloody-red-600 dark:bg-bloody-red-600">
+      <div className="flex flex-row justify-between items-center p-2 text-bloody-red-600 dark:text-bloody-red-600">
         <button className={`${slide === 0 ? 'text-transparent cursor-default' : ''} transition duration-300 disabled:opacity-30`} onClick={() => handleSlide(slide - 1)}>
           <CaretLeft size={24} weight='bold' />
         </button>
