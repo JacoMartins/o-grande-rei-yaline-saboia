@@ -87,12 +87,12 @@ export default function Header() {
                 >
                     Apoio
                 </a>
-                <a 
+                {/* <a 
                     className="text-nowrap"
                     href="/programa"
                 >
                     Programa
-                </a>
+                </a> */}
             </nav>
         </header>
     )
