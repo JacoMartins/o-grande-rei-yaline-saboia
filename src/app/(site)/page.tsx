@@ -62,6 +62,7 @@ import leoas_criancas_elenco from "@/assets/images/elenco/leoas_criancas.png"
 import leoas_jovens_elenco from "@/assets/images/elenco/leoas_jovens.png"
 import leopardos_elenco from "@/assets/images/elenco/leopardos.png"
 import passaros_elenco from "@/assets/images/elenco/passaros.png"
+import passaros_fita_elenco from "@/assets/images/elenco/passaros_fita.png"
 import zebras_elenco from "@/assets/images/elenco/zebras.png"
 import canto_das_pastagem_elenco from "@/assets/images/elenco/canto_das_pastagem.png"
 import esta_em_ti_thembas_elenco from "@/assets/images/elenco/esta_em_ti_thembas.png"
@@ -270,7 +271,7 @@ export default function Home() {
 
             <Group
               characterImage={bird}
-              actorsImage={passaros_elenco}
+              actorsImage={passaros_fita_elenco}
               name="Pássaros"
               role=""
               alt="Grupo dos Pássaros"
