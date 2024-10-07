@@ -514,13 +514,13 @@ export default function Home() {
             height={540}
             width={540}
             alt=""
-            className="w-[10rem] h-[10rem]"
+            className="w-[12rem] h-[12rem]"
           />
           <Image src={konten_limpeza}
             height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[6rem] h-[6rem]"
           />
         </div>
         {/* <h2
@@ -622,7 +622,7 @@ export default function Home() {
             <div>
               <span className="font-bold text-lg">Maquiagem:</span>
               <p>Natália Vasconcelos</p>
-              <p>Ana Ruth</p>
+              <p>Ana Ruth Ramos</p>
               <p>Deanira Sabóia</p>
               <p>Luana Gabriel</p>
               <p>Roberta Santos</p>
@@ -630,7 +630,7 @@ export default function Home() {
 
             <div>
               <span className="font-bold text-lg">Marketing:</span>
-              <p>Ana Letícia Reis e Ana Ruth Ramos</p>
+              <p>Letícia Reis e Ana Ruth Ramos</p>
             </div>
             <div>
               <span className="font-bold text-lg">Site:</span>
@@ -638,9 +638,9 @@ export default function Home() {
             </div>
             <div>
               <span className="font-bold text-lg">Mídias Sociais:</span>
-              <p>Ana Lívia</p>
+              <p>Ana Lívia Alves</p>
               <p>Rikelme Pereira</p>
-              <p>Ana Letícia Reis</p>
+              <p>Letícia Reis</p>
               <p>Ana Ruth Ramos</p>
               <p>Jacó Martins</p>
               <p>Pedro Yuri</p>
