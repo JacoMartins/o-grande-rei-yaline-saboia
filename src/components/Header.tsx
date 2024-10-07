@@ -29,11 +29,11 @@ export default function Header() {
     }
 
     return (
-        <header className={`fixed flex lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col sm:gap-8 max-sm:gap-8 justify-center items-center px-16 py-6 w-full bg-bloody-red-800 text-sunset-yellow-400 max-md:px-5 max-md:max-w-full ${berlin.className} z-10`}>
+        <header className={`fixed flex lg:flex-row md:flex-col max-md:flex-col sm:flex-col max-sm:flex-col sm:gap-8 max-sm:gap-8 justify-center items-center px-16 py-6 w-full bg-bloody-red-800 text-sunset-yellow-400 max-md:px-5 max-md:max-w-full ${berlin.className} z-10`}>
             <div className="flex gap-5 justify-between items-center w-full max-w-6xl max-md:max-w-full">
                 <h1 className="text-3xl text-orange-fruit-400">O Grande Rei</h1>
                 <button
-                    className="lg:hidden md:hidden sm:block max-sm:block flex items-center justify-center p-2 rounded-full text-lemon-yellow-100 transition-colors duration-300 ease-in-out"
+                    className="lg:hidden md:block sm:block max-sm:block flex items-center justify-center p-2 rounded-full text-lemon-yellow-100 transition-colors duration-300 ease-in-out"
                     onClick={handleNavVisibility}
                 >
                     {
@@ -45,7 +45,7 @@ export default function Header() {
                     }
                 </button>
             </div>
-            <nav className={`lg:flex md:flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col ${navVisible ? "sm:flex max-sm:flex" : "sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-auto max-md:h-auto sm:h-screen max-sm:h-screen lg:justify-between md:justify-between sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full text-lemon-yellow-100`}>
+            <nav className={`lg:flex md:flex lg:flex-row md:flex-col sm:flex-col max-sm:flex-col ${navVisible ? "md:flex sm:flex max-sm:flex" : "md:hidden sm:hidden max-sm:hidden"} gap-5 lg:h-auto md:h-screen max-md:h-screen sm:h-screen max-sm:h-screen lg:justify-between md:justify-start sm:justify-start max-sm:justify-start items-center text-2xl max-md:flex-wrap max-md:max-w-full text-lemon-yellow-100`}>
                 <a 
                     className="text-nowrap"
                     href="/"
