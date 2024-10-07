@@ -60,7 +60,7 @@ export default function Footer() {
                             {/* <h3 className={`${berlin.className}`}>O Grande Rei</h3> */}
                             <Image
                                 src={ogranderei_logo}
-                                className="w-40 max-md:w-24"
+                                className="w-40 max-md:w-40"
                                 width={256}
                                 height={106}
                                 alt="Logo O grande rei"
