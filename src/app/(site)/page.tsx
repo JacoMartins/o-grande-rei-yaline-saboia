@@ -568,7 +568,7 @@ export default function Home() {
             </div>
 
             <div>
-              <span className="font-bold text-lg">Secretaria:</span>
+              <span className="font-bold text-lg">Secretária:</span>
               <p>Vonikiany Lemos</p>
             </div>
 
