@@ -3,6 +3,7 @@
 import { InstagramLogo } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import yaline_saboia_logo from "@/assets/images/yaline_saboya.png";
+import ogranderei_logo from "@/assets/images/logos/ogranderei.png";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 
@@ -21,8 +22,8 @@ export default function Footer() {
                 block: 'nearest'
             });
         }
-    }   
-    
+    }
+
     return (
         <footer className="flex flex-col justify-center items-center w-full text-xl sunset-yellow-400 bg-bloody-red-800">
             <article className="flex gap-5 justify-center items-center w-full bg-bloody-red-600">
@@ -48,7 +49,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-row gap-[4.5rem] w-full lg:justify-between max-md:justify-between md:justify-between items-center sm:justify-center max-sm:justify-center">
-                        <aside className="flex flex-col gap-3 justify-center items-center text-3xl text-center text-sunset-yellow-400">
+                        <aside className="flex flex-col gap-8 justify-center items-center text-3xl text-center text-sunset-yellow-400">
                             <Image
                                 src={yaline_saboia_logo}
                                 className="w-40 max-md:w-24"
@@ -56,7 +57,14 @@ export default function Footer() {
                                 height={106}
                                 alt="Logo Yaline Sabóia"
                             />
-                            <h3 className={`${berlin.className}`}>O Grande Rei</h3>
+                            {/* <h3 className={`${berlin.className}`}>O Grande Rei</h3> */}
+                            <Image
+                                src={ogranderei_logo}
+                                className="w-40 max-md:w-24"
+                                width={256}
+                                height={106}
+                                alt="Logo O grande rei"
+                            />
                         </aside>
 
 

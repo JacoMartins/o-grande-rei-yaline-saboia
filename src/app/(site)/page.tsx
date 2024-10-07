@@ -56,7 +56,6 @@ import zazu_elenco from "@/assets/images/elenco/zazu.png"
 import antilopes_elenco from "@/assets/images/elenco/antilopes.png"
 import flamingos_elenco from "@/assets/images/elenco/flamingos.png"
 import gnus_elenco from "@/assets/images/elenco/gnus.png"
-import hienas_quarteto_elenco from "@/assets/images/elenco/hienas_quarteto.png"
 import hienas_elenco from "@/assets/images/elenco/hienas.png"
 import leoas_criancas_elenco from "@/assets/images/elenco/leoas_criancas.png"
 import leoas_jovens_elenco from "@/assets/images/elenco/leoas_jovens.png"
@@ -72,7 +71,10 @@ import govce from "@/assets/images/logos/govce.png"
 import secult from "@/assets/images/logos/secult.png"
 import theatro from "@/assets/images/logos/theatro.png"
 import idm from "@/assets/images/logos/idm-branco.png"
-import koten from "@/assets/images/logos/koten.png"
+import konten from "@/assets/images/logos/konten.png"
+import konten_limpeza from "@/assets/images/logos/konten_limpeza.png"
+import gutrep from "@/assets/images/logos/gut.rep.png"
+import beleza_nossa from "@/assets/images/logos/beleza_nossa_branco.png"
 
 import Audio from "@/components/Audio";
 
@@ -82,6 +84,8 @@ const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' })
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
+
+
       <section id="inicio">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
           <Image
@@ -230,18 +234,18 @@ export default function Home() {
               alt="Natália Vasconcelos como Shenzi"
             />
             <Actor
-              actorImage={ed_elenco}
-              characterImage={ed}
-              name="Kátia Lemos"
-              role="Ed"
-              alt="Kátia Lemos como Ed"
-            />
-            <Actor
               actorImage={banzai_elenco}
               characterImage={banzai}
               name="Luís Eduardo"
               role="Banzai"
               alt="Luís Eduardo como Banzai"
+            />
+            <Actor
+              actorImage={ed_elenco}
+              characterImage={ed}
+              name="Kátia Lemos"
+              role="Ed"
+              alt="Kátia Lemos como Ed"
             />
             <Actor
               actorImage={bill_elenco}
@@ -303,8 +307,8 @@ export default function Home() {
 
             <Group
               characterImage={hienas}
-              actorsImage={hienas_quarteto_elenco}
-              name="Hienas"
+              actorsImage={hienas_elenco}
+              name="Hienas (Se preparem)"
               role=""
               alt="Grupo dos Hienas"
             />
@@ -460,7 +464,7 @@ export default function Home() {
         bgColor="bg-strong-wood-700"
         textColor="text-lemon-yellow-100"
       >
-        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center">
+        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
           <Image src={idm}
             height={540}
             width={540}
@@ -491,7 +495,25 @@ export default function Home() {
             alt=""
             className="w-[8rem] h-[8rem]"
           />
-          <Image src={koten}
+          <Image src={konten}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[6rem] h-[6rem]"
+          />
+          <Image src={gutrep}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={beleza_nossa}
+            height={540}
+            width={540}
+            alt=""
+            className="w-[10rem] h-[10rem]"
+          />
+          <Image src={konten_limpeza}
             height={540}
             width={540}
             alt=""
@@ -522,6 +544,10 @@ export default function Home() {
               <p>Yaline Sabóia</p>
             </div>
             <div>
+              <span className="font-bold text-lg">Direção Artística:</span>
+              <p>Yaline Sabóia</p>
+            </div>
+            <div>
               <span className="font-bold text-lg">Direção Musical:</span>
               <p>Luana Gabriel</p>
             </div>
@@ -535,13 +561,37 @@ export default function Home() {
               <p>Yaline Sabóia</p>
               <p>Deanira Sabóia</p>
               <p>Jonas Jorge</p>
-              <p>Giovana</p>
-              <p>Jamyle</p>
+              <p>Giovana Santos</p>
+              <p>Jamyle Oliveira</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Administrativo:</span>
+              <p>Yasmine Sabóia</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Secretaria:</span>
+              <p>Vonikiany Lemos</p>
             </div>
 
             <div>
               <span className="font-bold text-lg">Iluminação:</span>
               <p>Jorge Brasil</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Figurinista:</span>
+              <p>Natália Vasconcelos</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Figurinos:</span>
+              <p>Meu Bem Dancing</p>
+              <p>D&lsquo;Ballet</p>
+              <p>Diana</p>
+              <p>Natália Vasconcelos</p>
+              <p>Zeneida</p>
             </div>
           </div>
 
@@ -551,21 +601,30 @@ export default function Home() {
           </div> */}
 
           <div className="flex flex-col justify-between gap-4">
-            <div>
-              <span className="font-bold text-lg">Figurinos:</span>
-              <p>Meu Bem Dancing</p>
-              <p>Natália Vasconcelos</p>
-              <p>Zeneida</p>
-            </div>
             {/* <div> */}
             {/* <span className="font-bold text-lg">Cenografia:</span> */}
             {/* <p> </p> */}
             {/* </div> */}
-            
+
+            <div>
+              <span className="font-bold text-lg">Equipe Técnica:</span>
+              <p>Theatro José de Alencar</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Produtor Sonoplasta:</span>
+              <p>RMIX Studio</p>
+            </div>
+
             <div>
               <span className="font-bold text-lg">Maquiagem:</span>
-              <p>Natália Vasconcelos, Ana Ruth...</p>
+              <p>Natália Vasconcelos</p>
+              <p>Ana Ruth</p>
+              <p>Deanira Sabóia</p>
+              <p>Luana Gabriel</p>
+              <p>Roberta Santos</p>
             </div>
+
             <div>
               <span className="font-bold text-lg">Marketing:</span>
               <p>Ana Letícia Reis e Ana Ruth Ramos</p>
@@ -584,9 +643,21 @@ export default function Home() {
               <p>Pedro Yuri</p>
               <p>Cauan Victor</p>
             </div>
-            {/* <div> */}
-            {/* <p><span className="font-bold text-lg">Patrocinadores: </span> </p> */}
-            {/* </div> */}
+
+            <div>
+              <span className="font-bold text-lg">Apoio: </span>
+              <p>Amanda Maria</p>
+              <p>Instituto Dragão do Mar</p>
+              <p>Theatro José de Alencar</p>
+              <p>Ceará Cultura</p>
+              <p>Secretaria da Cultura do Estado do Ceará</p>
+              <p>Associação das Academias de dança do Ceará</p>
+              <p>Konten Contabilidade</p>
+              <p>Gut.Rep</p>
+              <p>Konten Contabilidade</p>
+              <p>Jôsi Beleza Nossa</p>
+              <p>Konten Limpeza</p>
+            </div>
           </div>
 
           <div>
