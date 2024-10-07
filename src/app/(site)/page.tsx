@@ -327,7 +327,7 @@ export default function Home() {
             <Group
               characterImage={gnus}
               actorsImage={gnus_elenco}
-              name="Gnus (Se Preparem)"
+              name="Gnus"
               role=""
               alt="Grupo dos Gnus"
             />
