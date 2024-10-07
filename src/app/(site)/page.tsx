@@ -469,10 +469,9 @@ export default function Home() {
       >
         <div className="flex lg:gap-8 md:gap-8 sm:gap-2 max-sm:gap-2 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
           <Image src={idm}
-            height={540}
             width={540}
             alt=""
-            className="w-[10rem] h-[10rem]"
+            className="w-[10rem] h-auto"
           />
           <Image src={theatro}
             height={540}
@@ -481,22 +480,19 @@ export default function Home() {
             className="w-[8rem] h-[8rem]"
           />
           <Image src={secult}
-            height={540}
             width={540}
             alt=""
-            className="w-[9rem] h-[9rem]"
+            className="w-[9rem] h-auto"
           />
           <Image src={govce}
-            height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[8rem] h-auto"
           />
           <Image src={adce}
-            height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[8rem] h-auto"
           />
           <Image src={konten}
             height={540}
