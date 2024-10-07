@@ -511,21 +511,87 @@ export default function Home() {
         bgColor="bg-green-900"
         textColor="text-lemon-yellow-100"
       >
-        <div className="flex flex-col gap-0 max-w-3xl max-md:max-w-full">
-          <p><span className="font-bold text-lg">Realização:</span> Escola de Dança Yaline Sabóia</p>
-          <p><span className="font-bold text-lg">Direção Geral:</span> Yaline Sabóia</p>
-          <p><span className="font-bold text-lg">Direção Musical:</span> Luana Gabriel</p>
-          <p><span className="font-bold text-lg">Direção Teatral:</span> Yaline Sabóia e David Barbosa</p>
-          <p><span className="font-bold text-lg">Atores: </span> Ana Ruth, Arthur Valdez, Bruna Tayná, Deanira Sabóia, Isadora Brasil, Isaque Ferreira, Kátia Lemos, Leon Cavalcante, Leonardo Reis, Lia Nara, Luís Eduardo, Matheus Macedo, Natália Vasconcelos, Naylica Xavier, Paulo André Reis, Roberta Santos</p>
-          <p><span className="font-bold text-lg">Coreógrafos:</span> Yaline Sabóia, Deanira Sabóia, Jonas Jorge, Giovana E Jamyle</p>
-          <p><span className="font-bold text-lg">Figurinos:</span> Meu Bem Dancing, Natália Vasconcelos, Zeneida</p>
-          {/* <p><span className="font-bold text-lg">Cenografia:</span> </p> */}
-          <p><span className="font-bold text-lg">Iluminação:</span> Jorge Brasil</p>
-          <p><span className="font-bold text-lg">Maquiagem:</span> Natália Vasconcelos, Ana Ruth</p>
-          <p><span className="font-bold text-lg">Mídias Sociais:</span> Ana Lívia, Rikelme Pereira, Ana Letícia Reis, Ana Ruth Ramos, Jacó Martins, Pedro Yuri e Cauan Victor</p>
-          <p><span className="font-bold text-lg">Marketing:</span> Ana Letícia Reis e Ana Ruth Ramos</p>
-          <p><span className="font-bold text-lg">Site:</span> Jacó Martins e Letícia Reis</p>
-          {/* <p><span className="font-bold text-lg">Patrocinadores: </span> </p> */}
+        <div className="flex lg:flex-row lg:justify-between lg:items-center md:flex-col md:justify-center md:items-center sm:flex-col sm:justify-center sm:items-center max-sm:flex-col max-sm:justify-center max-sm:items-center gap-6 max-w-3xl max-md:max-w-full">
+          <div className="flex flex-col justify-between gap-4">
+            <div>
+              <span className="font-bold text-lg">Realização:</span>
+              <p> Escola de Dança Yaline Sabóia</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Direção Geral:</span>
+              <p>Yaline Sabóia</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Direção Musical:</span>
+              <p>Luana Gabriel</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Direção Teatral:</span>
+              <p>Yaline Sabóia</p>
+              <p>David Barbosa</p>
+            </div>
+            <div>
+              <p><span className="font-bold text-lg">Coreógrafos:</span></p>
+              <p>Yaline Sabóia</p>
+              <p>Deanira Sabóia</p>
+              <p>Jonas Jorge</p>
+              <p>Giovana</p>
+              <p>Jamyle</p>
+            </div>
+
+            <div>
+              <span className="font-bold text-lg">Iluminação:</span>
+              <p>Jorge Brasil</p>
+            </div>
+          </div>
+
+          {/* <div className="flex flex-col justify-between gap-4">
+
+
+          </div> */}
+
+          <div className="flex flex-col justify-between gap-4">
+            <div>
+              <span className="font-bold text-lg">Figurinos:</span>
+              <p>Meu Bem Dancing</p>
+              <p>Natália Vasconcelos</p>
+              <p>Zeneida</p>
+            </div>
+            {/* <div> */}
+            {/* <span className="font-bold text-lg">Cenografia:</span> */}
+            {/* <p> </p> */}
+            {/* </div> */}
+            
+            <div>
+              <span className="font-bold text-lg">Maquiagem:</span>
+              <p>Natália Vasconcelos, Ana Ruth...</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Marketing:</span>
+              <p>Ana Letícia Reis e Ana Ruth Ramos</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Site:</span>
+              <p>Jacó Martins e Letícia Reis</p>
+            </div>
+            <div>
+              <span className="font-bold text-lg">Mídias Sociais:</span>
+              <p>Ana Lívia</p>
+              <p>Rikelme Pereira</p>
+              <p>Ana Letícia Reis</p>
+              <p>Ana Ruth Ramos</p>
+              <p>Jacó Martins</p>
+              <p>Pedro Yuri</p>
+              <p>Cauan Victor</p>
+            </div>
+            {/* <div> */}
+            {/* <p><span className="font-bold text-lg">Patrocinadores: </span> </p> */}
+            {/* </div> */}
+          </div>
+
+          <div>
+
+          </div>
         </div>
       </Section>
     </main >
