@@ -85,7 +85,7 @@ const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' })
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-bloody-red-800 uppercase lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-lemon-yellow-100">
+      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-sunset-yellow-400 text-center uppercase lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-bloody-red-800">
         <Timer />
       </section>
 
@@ -311,7 +311,7 @@ export default function Home() {
             <Group
               characterImage={hienas}
               actorsImage={hienas_elenco}
-              name="Hienas (Se preparem)"
+              name="Hienas (Se Preparem)"
               role=""
               alt="Grupo dos Hienas"
             />
@@ -327,7 +327,7 @@ export default function Home() {
             <Group
               characterImage={gnus}
               actorsImage={gnus_elenco}
-              name="Gnus"
+              name="Gnus (Se Preparem)"
               role=""
               alt="Grupo dos Gnus"
             />
@@ -467,7 +467,7 @@ export default function Home() {
         bgColor="bg-strong-wood-700"
         textColor="text-lemon-yellow-100"
       >
-        <div className="flex gap-8 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
+        <div className="flex lg:gap-8 md:gap-8 sm:gap-2 max-sm:gap-2 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
           <Image src={idm}
             height={540}
             width={540}
@@ -505,16 +505,14 @@ export default function Home() {
             className="w-[6rem] h-[6rem]"
           />
           <Image src={gutrep}
-            height={540}
             width={540}
             alt=""
-            className="w-[10rem] h-[10rem]"
+            className="w-[10rem] h-auto"
           />
           <Image src={beleza_nossa}
-            height={540}
             width={540}
             alt=""
-            className="w-[12rem] h-[12rem]"
+            className="w-[12rem] h-auto"
           />
           <Image src={konten_limpeza}
             height={540}
