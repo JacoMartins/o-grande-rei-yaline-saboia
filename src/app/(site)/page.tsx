@@ -508,7 +508,7 @@ export default function Home() {
             height={540}
             width={540}
             alt=""
-            className="w-[8rem] h-[8rem]"
+            className="w-[10rem] h-[10rem]"
           />
           <Image src={beleza_nossa}
             height={540}
