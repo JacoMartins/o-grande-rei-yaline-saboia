@@ -77,6 +77,7 @@ import gutrep from "@/assets/images/logos/gut.rep.png"
 import beleza_nossa from "@/assets/images/logos/beleza_nossa_branco.png"
 
 import Audio from "@/components/Audio";
+import Timer from "@/components/Timer";
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -84,7 +85,9 @@ const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' })
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-
+      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-bloody-red-800 lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-lemon-yellow-100">
+        <Timer />
+      </section>
 
       <section id="inicio">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
