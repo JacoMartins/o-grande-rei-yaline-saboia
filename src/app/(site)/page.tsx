@@ -176,9 +176,9 @@ export default function Home() {
             <Actor
               actorImage={nala_crianca_elenco}
               characterImage={nala_crianca}
-              name="Isadora Brasil"
+              name="Izadora Brasil"
               role="Nala Criança"
-              alt="Isadora Brasil como Nala Criança"
+              alt="Izadora Brasil como Nala Criança"
             />
             <Actor
               actorImage={nala_adulta_elenco}
