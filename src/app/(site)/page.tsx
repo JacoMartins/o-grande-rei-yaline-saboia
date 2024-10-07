@@ -452,14 +452,7 @@ export default function Home() {
         </div>
       </Section> */}
 
-      {/* <Section
-        id="ficha"
-        title="Ficha Técnica"
-        bgColor="bg-green-900"
-        textColor="text-lemon-yellow-100"
-      >
 
-      </Section> */}
 
       <Section
         id="apoio"
@@ -510,6 +503,30 @@ export default function Home() {
         >
           Patrocínio
         </h2> */}
+      </Section>
+
+      <Section
+        id="ficha"
+        title="Ficha Técnica"
+        bgColor="bg-green-900"
+        textColor="text-lemon-yellow-100"
+      >
+        <div className="flex flex-col gap-0 max-w-3xl max-md:max-w-full">
+          <p><span className="font-bold text-lg">Realização:</span> Escola de Dança Yaline Sabóia</p>
+          <p><span className="font-bold text-lg">Direção Geral:</span> Yaline Sabóia</p>
+          <p><span className="font-bold text-lg">Direção Musical:</span> Luana Gabriel</p>
+          <p><span className="font-bold text-lg">Direção Teatral:</span> Yaline Sabóia e David Barbosa</p>
+          <p><span className="font-bold text-lg">Atores: </span> Ana Ruth, Arthur Valdez, Bruna Tayná, Deanira Sabóia, Isadora Brasil, Isaque Ferreira, Kátia Lemos, Leon Cavalcante, Leonardo Reis, Lia Nara, Luís Eduardo, Matheus Macedo, Natália Vasconcelos, Naylica Xavier, Paulo André Reis, Roberta Santos</p>
+          <p><span className="font-bold text-lg">Coreógrafos:</span> Yaline Sabóia, Deanira Sabóia, Jonas Jorge, Giovana E Jamyle</p>
+          <p><span className="font-bold text-lg">Figurinos:</span> Meu Bem Dancing, Natália Vasconcelos, Zeneida</p>
+          {/* <p><span className="font-bold text-lg">Cenografia:</span> </p> */}
+          <p><span className="font-bold text-lg">Iluminação:</span> Jorge Brasil</p>
+          <p><span className="font-bold text-lg">Maquiagem:</span> Natália Vasconcelos, Ana Ruth</p>
+          <p><span className="font-bold text-lg">Mídias Sociais:</span> Ana Lívia, Rikelme Pereira, Ana Letícia Reis, Ana Ruth Ramos, Jacó Martins, Pedro Yuri e Cauan Victor</p>
+          <p><span className="font-bold text-lg">Marketing:</span> Ana Letícia Reis e Ana Ruth Ramos</p>
+          <p><span className="font-bold text-lg">Site:</span> Jacó Martins e Letícia Reis</p>
+          {/* <p><span className="font-bold text-lg">Patrocinadores: </span> </p> */}
+        </div>
       </Section>
     </main >
   );

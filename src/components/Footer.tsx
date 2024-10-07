@@ -106,6 +106,13 @@ export default function Footer() {
                                 >
                                     Apoio
                                 </a>
+                                <a
+                                    className="font-light underline leading-tight"
+                                    href="#ficha"
+                                    onClick={handleAnchorClick}
+                                >
+                                    Ficha Técnica
+                                </a>
                                 {/* <a
                                     className="font-light underline leading-tight"
                                     href="/programa"

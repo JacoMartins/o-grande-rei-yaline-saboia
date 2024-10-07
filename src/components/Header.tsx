@@ -87,6 +87,13 @@ export default function Header() {
                 >
                     Apoio
                 </a>
+                <a 
+                    className="text-nowrap"
+                    href="#ficha"
+                    onClick={handleAnchorClick}
+                >
+                    Ficha Técnica
+                </a>
                 {/* <a 
                     className="text-nowrap"
                     href="/programa"
