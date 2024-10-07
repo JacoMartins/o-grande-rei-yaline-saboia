@@ -85,7 +85,7 @@ const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' })
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-bloody-red-800 lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-lemon-yellow-100">
+      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-bloody-red-800 uppercase lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-lemon-yellow-100">
         <Timer />
       </section>
 
@@ -592,7 +592,7 @@ export default function Home() {
               <span className="font-bold text-lg">Figurinos:</span>
               <p>Meu Bem Dancing</p>
               <p>D&lsquo;Ballet</p>
-              <p>Diana</p>
+              <p>Nanda Lia Criações</p>
               <p>Natália Vasconcelos</p>
               <p>Zeneida</p>
             </div>
@@ -650,16 +650,15 @@ export default function Home() {
             <div>
               <span className="font-bold text-lg">Apoio: </span>
               <p>Amanda Maria</p>
-              <p>Instituto Dragão do Mar</p>
-              <p>Theatro José de Alencar</p>
-              <p>Ceará Cultura</p>
-              <p>Secretaria da Cultura do Estado do Ceará</p>
               <p>Associação das Academias de dança do Ceará</p>
-              <p>Konten Contabilidade</p>
+              <p>Ceará Cultura</p>
               <p>Gut.Rep</p>
-              <p>Konten Contabilidade</p>
+              <p>Instituto Dragão do Mar</p>
               <p>Jôsi Beleza Nossa</p>
+              <p>Konten Contabilidade</p>
               <p>Konten Limpeza</p>
+              <p>Secretaria da Cultura do Estado do Ceará</p>
+              <p>Theatro José de Alencar</p>
             </div>
           </div>
 

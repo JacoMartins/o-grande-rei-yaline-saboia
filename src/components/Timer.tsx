@@ -27,7 +27,7 @@ export default function Timer() {
 
     return (
         <div className="timer">
-            Faltam {days} dias, {hours} horas, {minutes} minutos e {seconds} segundos para o espetáculo!
+            Faltam {days} dias, {hours} horas, {minutes} minutos e {seconds} segundos para o grande dia!
         </div>
     )
 }
