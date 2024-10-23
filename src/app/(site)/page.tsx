@@ -75,9 +75,11 @@ import konten from "@/assets/images/logos/konten.png"
 import konten_limpeza from "@/assets/images/logos/konten_limpeza.png"
 import gutrep from "@/assets/images/logos/gut.rep.png"
 import beleza_nossa from "@/assets/images/logos/beleza_nossa_branco.png"
+import sg_topdecor from "@/assets/images/logos/sg_topdecor.png"
 
 import Audio from "@/components/Audio";
 import Timer from "@/components/Timer";
+import AccordionDrawer from "@/components/AccordionDrawer";
 
 const inter = Inter({ subsets: ['latin'] });
 const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' });
@@ -450,16 +452,13 @@ export default function Home() {
       {/* <Section
         id="faq"
         title="Dúvidas Frequentes"
-        bgColor="bg-strong-wood-700"
+        bgColor="bg-bloody-red-800"
         textColor="text-lemon-yellow-100"
       >
         <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
-          
-
+          <AccordionDrawer />
         </div>
       </Section> */}
-
-
 
       <Section
         id="apoio"
@@ -470,50 +469,56 @@ export default function Home() {
         <div className="flex lg:gap-8 md:gap-8 sm:gap-2 max-sm:gap-2 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
           <Image src={idm}
             width={540}
-            alt=""
+            alt="Logomarca do Instituto Dragão do Mar"
             className="w-[10rem] h-auto"
           />
           <Image src={theatro}
             height={540}
             width={540}
-            alt=""
+            alt="Logomarca do Theatro José de Alencar"
             className="w-[8rem] h-[8rem]"
           />
           <Image src={secult}
             width={540}
-            alt=""
+            alt="Logomarca do Ceará Cultura"
             className="w-[9rem] h-auto"
           />
           <Image src={govce}
             width={540}
-            alt=""
+            alt="Logomarca da Secretaria da Cultura do Ceará"
             className="w-[8rem] h-auto"
           />
           <Image src={adce}
             width={540}
-            alt=""
+            alt="Logomarca da Associação das Academias de Dança do Ceará"
             className="w-[8rem] h-auto"
           />
           <Image src={konten}
             height={540}
             width={540}
-            alt=""
+            alt="Logomarca da Konten"
             className="w-[6rem] h-[6rem]"
           />
           <Image src={gutrep}
             width={540}
-            alt=""
+            alt="Logomarca da Gut.Rep"
             className="w-[10rem] h-auto"
           />
           <Image src={beleza_nossa}
             width={540}
-            alt=""
+            alt="Logomarca da Beleza Nossa"
             className="w-[12rem] h-auto"
           />
           <Image src={konten_limpeza}
             height={540}
             width={540}
-            alt=""
+            alt="Logomarca da Konten Limpeza"
+            className="w-[6rem] h-[6rem]"
+          />
+          <Image src={sg_topdecor}
+            height={540}
+            width={540}
+            alt="Logomarca da SG Top Decor"
             className="w-[6rem] h-[6rem]"
           />
         </div>
@@ -652,6 +657,7 @@ export default function Home() {
               <p>Konten Contabilidade</p>
               <p>Konten Limpeza</p>
               <p>Secretaria da Cultura do Estado do Ceará</p>
+              <p>SG Top Decor</p>
               <p>Theatro José de Alencar</p>
             </div>
           </div>
