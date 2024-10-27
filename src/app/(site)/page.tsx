@@ -1,7 +1,7 @@
 import Image from "next/image";
 import localFont from 'next/font/local';
 import { Inter } from 'next/font/google';
-import { MapPin } from '@phosphor-icons/react/dist/ssr';
+import { ArrowUpRight, MapPin } from '@phosphor-icons/react/dist/ssr';
 import Section from "@/components/Section";
 import Map from "@/components/Map";
 import Actor from "@/components/Actor";
@@ -361,73 +361,24 @@ export default function Home() {
         className="lg:gap-8 md:gap-8 sm:gap-12 max-sm:gap-12"
       >
         <div className="flex flex-col lg:justify-center md:justify-center max-md:justify-center lg:items-center md:items-center max-md:items-center sm:justify-left max-sm:justify-left sm:items-start max-sm:items-start text-red-950 text-left">
-          <span className={`${inter.className} text-lg`}>22 e 23 de Novembro</span>
           <h4 className="text-2xl">Musical</h4>
           <h3 className="text-4xl">O Grande Rei</h3>
+          <span className={`${inter.className} text-lg`}>22 e 23 de Novembro</span>
         </div>
 
-        <div className="flex flex-col gap-12 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
+        {/* <div className="flex flex-col gap-12 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
           <span>
             (Em breve estarão disponíveis!)
+          </span>
+        </div> */}
+
+        <div className="flex flex-col gap-12 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left lg:max-w-3xl">
+          <span>
+            🎟 Promoção especial: Meia-entrada para todos por R$ 50,00 até 20/11! Após essa data, os valores serão de R$ 50,00 (meia) e R$ 100,00 (inteira).
           </span>
         </div>
 
         <div className="flex flex-col gap-12 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left">
-          {/* <div className="flex lg:flex-col md:flex-col sm:flex-col max-sm:flex-col justify-between lg:items-center md:items-center sm:items-start max-sm:items-start lg:gap-4 md:gap-4 sm:gap-8 max-sm:gap-8 lg:w-[26rem] md:w-[26rem] sm:w-full max-sm:w-full">
-            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-center md:justify-center sm:justify-start max-sm:justify-start items-center w-full">
-              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}></div>
-              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Meia</div>
-              <div className={`${berlin.className} text-2xl text-nowrap font-normal w-full text-left`}>Inteira</div>
-            </div>
-
-            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
-              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
-                1º Lote
-              </span>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    55,00
-                  </h3>
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    110,00
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="flex lg:flex-row md:flex-row max-md:flex-row sm:flex-row max-sm:flex-row lg:justify-start md:justify-start sm:justify-start max-sm:justify-start items-center w-full">
-              <span className={`${berlin.className} text-left text-2xl text-nowrap font-normal w-full`}>
-                2º Lote
-              </span>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    60,00
-                  </h3>
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:justify-center md:justify-center lg:items-start md:items-start sm:items-start max-sm:items-start max-md:w-full lg:text-center md:text-center sm:text-center max-sm:text-center w-full">
-                <div className={`${inter.className} flex flex-row items-start gap-1.5 whitespace-nowrap`}>
-                  <span className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium">R$</span>
-                  <h3 className="text-2xl sm:text-xl max-sm:text-xl sm:font-regular max-sm:font-regular font-medium leading-8">
-                    120,00
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div> */}
-
 
           <div className="flex flex-col gap-4 justify-center lg:items-center md:items-center sm:items-start max-sm:items-start lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl lg:text-center md:text-center sm:text-left max-sm:text-left text-red-950">
             <Map className="h-48 lg:w-96 md:w-96 sm:w-full max-sm:w-full overflow-hidden" />
@@ -439,17 +390,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <a
+          <a
             className="flex flex-row gap-4 justify-center items-center px-5 py-2 text-3xl text-sunset-yellow-400 bg-bloody-red-600 rounded-lg hover:bg-red-800 transition-colors duration-300 ease-in-out"
             target="_blank"
-            href="https://www.sympla.com.br/evento/musical-o-grande-rei-celebration-10-anos-da-edys/2540995">
+            href="https://bileto.sympla.com.br/event/100065">
             Garanta já o seu Ingresso no Sympla
             <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
-          </a> */}
+          </a>
         </div>
       </Section>
 
-      {/* <Section
+      <Section
         id="faq"
         title="Dúvidas Frequentes"
         bgColor="bg-bloody-red-800"
@@ -458,7 +409,7 @@ export default function Home() {
         <div className="flex flex-col gap-5 max-md:flex-col max-md:gap-0 max-md:max-w-full max-w-6xl">
           <AccordionDrawer />
         </div>
-      </Section> */}
+      </Section>
 
       <Section
         id="apoio"
