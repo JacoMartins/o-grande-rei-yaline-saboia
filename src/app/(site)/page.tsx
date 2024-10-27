@@ -417,7 +417,7 @@ export default function Home() {
         bgColor="bg-strong-wood-700"
         textColor="text-lemon-yellow-100"
       >
-        <div className="flex lg:gap-8 md:gap-8 sm:gap-2 max-sm:gap-2 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
+        <div className="flex lg:gap-8 md:gap-8 sm:gap-4 max-sm:gap-4 lg:flex-row max-lg:flex-row max-sm:flex-col sm:flex-col items-center justify-center max-md:max-w-full lg:max-w-4xl flex-wrap">
           <Image src={idm}
             width={540}
             alt="Logomarca do Instituto Dragão do Mar"
