@@ -400,8 +400,8 @@ export default function Home() {
             <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
           </a>
 
-            <span>
-              AVISO: Estamos apenas com a venda dos ingressos do ASSENTO “PLATEIA”.
+            <span className="max-w-2xl">
+              Quer tirar dúvidas sobre a venda dos ingressos? Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
             </span>
         </div>
       </Section>
