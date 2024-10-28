@@ -3,15 +3,22 @@ import pagina2 from "@/assets/images/programa/2.png"
 import pagina3 from "@/assets/images/programa/3.png"
 import pagina4 from "@/assets/images/programa/4.png"
 import pagina5 from "@/assets/images/programa/5.png"
+import pagina6 from "@/assets/images/programa/6.png"
+import pagina7 from "@/assets/images/programa/7.png"
+import pagina8 from "@/assets/images/programa/8.png"
+import pagina9 from "@/assets/images/programa/9.png"
+import pagina10 from "@/assets/images/programa/10.png"
+import pagina11 from "@/assets/images/programa/11.png"
+import pagina12 from "@/assets/images/programa/12.png"
 import Image from "next/image";
 import Programa from "@/components/Programa";
 
 export default function Home() {
     return (
-        <main className="h-[100vh] w-full bg-bloody-red-800 pt-[5.5rem]">
+        <main className="h-auto w-full bg-bloody-red-800 pt-[5.5rem]">
             <section className="flex flex-col justify-center items-center w-full">
-                <Programa className="lg:w-[40rem] md:w-[30rem] max-sm:w-full sm:w-full">
-                    <figure className="aspect-a4 h-auto lg:w-[40rem] lg:min-w-[40rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                <Programa className="lg:w-[30rem] md:w-[30rem] max-sm:w-full sm:w-full">
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina1}
                             alt="Página 1 do programa do espetáculo 'O grande rei'"
@@ -20,7 +27,7 @@ export default function Home() {
                             className="object-cover w-full"
                         />
                     </figure>
-                    <figure className="aspect-a4 h-auto lg:w-[40rem] lg:min-w-[40rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina2}
                             alt="Página 2 do programa do espetáculo 'O grande rei'"
@@ -29,7 +36,7 @@ export default function Home() {
                             className="object-cover w-full"
                         />
                     </figure>
-                    <figure className="aspect-a4 h-auto lg:w-[40rem] lg:min-w-[40rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina3}
                             alt="Página 3 do programa do espetáculo 'O grande rei'"
@@ -38,7 +45,7 @@ export default function Home() {
                             className="object-cover w-full"
                         />
                     </figure>
-                    <figure className="aspect-a4 h-auto lg:w-[40rem] lg:min-w-[40rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina4}
                             alt="Página 4 do programa do espetáculo 'O grande rei'"
@@ -47,12 +54,75 @@ export default function Home() {
                             className="object-cover w-full"
                         />
                     </figure>
-                    <figure className="aspect-a4 h-auto lg:w-[40rem] lg:min-w-[40rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina5}
                             alt="Página 5 do programa do espetáculo 'O grande rei'"
                             width={pagina5.width}
                             height={pagina5.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina6}
+                            alt="Página 6 do programa do espetáculo 'O grande rei'"
+                            width={pagina6.width}
+                            height={pagina6.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina7}
+                            alt="Página 7 do programa do espetáculo 'O grande rei'"
+                            width={pagina7.width}
+                            height={pagina7.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina8}
+                            alt="Página 8 do programa do espetáculo 'O grande rei'"
+                            width={pagina8.width}
+                            height={pagina8.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina9}
+                            alt="Página 9 do programa do espetáculo 'O grande rei'"
+                            width={pagina9.width}
+                            height={pagina9.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina10}
+                            alt="Página 10 do programa do espetáculo 'O grande rei'"
+                            width={pagina10.width}
+                            height={pagina10.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina11}
+                            alt="Página 11 do programa do espetáculo 'O grande rei'"
+                            width={pagina11.width}
+                            height={pagina11.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina12}
+                            alt="Página 12 do programa do espetáculo 'O grande rei'"
+                            width={pagina12.width}
+                            height={pagina12.height}
                             className="object-cover w-full"
                         />
                     </figure>

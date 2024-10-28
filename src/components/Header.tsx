@@ -73,13 +73,13 @@ export default function Header() {
                 >
                     Ingressos
                 </a>
-                {/* <a 
+                <a 
                     className="text-nowrap"
                     href="#faq"
                     onClick={handleAnchorClick}
                 >
                     Dúvidas
-                </a> */}
+                </a>
                 <a 
                     className="text-nowrap"
                     href="#apoio"
@@ -94,7 +94,7 @@ export default function Header() {
                 >
                     Ficha Técnica
                 </a>
-                {/* <a 
+                {/*<a 
                     className="text-nowrap"
                     href="/programa"
                 >

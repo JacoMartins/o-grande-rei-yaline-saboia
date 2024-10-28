@@ -100,13 +100,13 @@ export default function Footer() {
                                 >
                                     Ingressos
                                 </a>
-                                {/* <a
+                                <a
                                     className="font-light underline leading-tight"
                                     href="#faq"
                                     onClick={handleAnchorClick}
                                 >
                                     Dúvidas Frequentes
-                                </a> */}
+                                </a>
                                 <a
                                     className="font-light underline leading-tight"
                                     href="#apoio"
@@ -124,7 +124,6 @@ export default function Footer() {
                                 {/* <a
                                     className="font-light underline leading-tight"
                                     href="/programa"
-                                    onClick={handleAnchorClick}
                                 >
                                     Programa
                                 </a> */}
