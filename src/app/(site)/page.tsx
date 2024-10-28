@@ -401,7 +401,7 @@ export default function Home() {
           </a>
 
             <span>
-              AVISO: Comprar apenas ASSENTO PLATEIA até uma segunda ordem.
+              AVISO: Estamos apenas com a venda dos ingressos do ASSENTO “PLATEIA”.
             </span>
         </div>
       </Section>
