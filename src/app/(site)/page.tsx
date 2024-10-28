@@ -77,6 +77,8 @@ import gutrep from "@/assets/images/logos/gut.rep.png"
 import beleza_nossa from "@/assets/images/logos/beleza_nossa_branco.png"
 import sg_topdecor from "@/assets/images/logos/sg_topdecor.png"
 
+import mapa_jose_de_alencar from "@/assets/images/mapa_jose_de_alencar.jpg"
+
 import Audio from "@/components/Audio";
 import Timer from "@/components/Timer";
 import AccordionDrawer from "@/components/AccordionDrawer";
@@ -397,6 +399,10 @@ export default function Home() {
             Garanta já o seu Ingresso no Sympla
             <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
           </a>
+
+            <span>
+              AVISO: Comprar assentos apenas na parte da plateia.
+            </span>
         </div>
       </Section>
 
@@ -548,7 +554,7 @@ export default function Home() {
               <p>Paulo André Reis</p>
               <p>Vonikiany Lemos</p>
             </div>
-            
+
             <div>
               <span className="font-bold text-lg">Figurinista:</span>
               <p>Natália Vasconcelos</p>
@@ -572,7 +578,7 @@ export default function Home() {
               <p>Nanda Lia Criações</p>
               <p>Natália Vasconcelos</p>
             </div>
-            
+
             <div>
               <span className="font-bold text-lg">Equipe Técnica:</span>
               <p>Theatro José de Alencar</p>
