@@ -33,15 +33,20 @@ export default function Footer() {
                         <div className="flex flex-col gap-4 text-sunset-yellow-400">
                             <a className="flex flex-col gap-0" href="https://www.instagram.com/escoladedancayalinesaboia/" target="_blank">
                                 <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
-                                <p className={`${inter.className} text-xl`}>@escoladedancayalinesaboia</p>
                                 <span className={`${inter.className} text-xl font-light`}>
                                     E acompanhe as nossas novidades.
                                 </span>
                             </a>
 
-                            <a className={`${inter.className} text-lg font-medium`} href="https://wa.me/5585998552222">
-                                Entre em contato conosco: (85) 99855-2222.
-                            </a>
+                            <div className="flex flex-col gap-2">
+                                <p className={`${inter.className} text-lg font-medium`}>
+                                    Entre em contato conosco:
+                                </p>
+                                <div className="flex flex-col gap-0">
+                                    <a className={`${inter.className} text-lg font-normal`} href="https://wa.me/5585998552222">(85) 99855-2222</a>
+                                    <a className={`${inter.className} text-lg font-normal`} href="https://www.instagram.com/escoladedancayalinesaboia/">@escoladedancayalinesaboia</a>
+                                </div>
+                            </div>
                         </div>
                         <a
                             href="https://www.instagram.com/escoladedancayalinesaboia/"
