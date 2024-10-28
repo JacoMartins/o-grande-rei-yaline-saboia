@@ -121,12 +121,12 @@ export default function Footer() {
                                 >
                                     Ficha Técnica
                                 </a>
-                                <a
+                                {/* <a
                                     className="font-light underline leading-tight"
                                     href="/programa"
                                 >
                                     Programa
-                                </a>
+                                </a> */}
                             </nav>
                         </div>
                     </div>
