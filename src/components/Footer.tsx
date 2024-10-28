@@ -30,15 +30,19 @@ export default function Footer() {
                 <div className="flex lg:flex-col md:flex-col max-md:flex-col sm:flex-col-reverse max-sm:flex-col-reverse justify-start items-center gap-10 w-full max-w-6xl w-full px-8 py-12">
 
                     <div className="flex flex-row gap-6 justify-between items-start w-full">
-                        <a
-                            href="https://www.instagram.com/escoladedancayalinesaboia/"
-                            target="_blank"
-                            className="flex flex-col gap-0 text-sunset-yellow-400">
-                            <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
-                            <span className={`${inter.className} text-xl font-light`}>
-                                Acompanhe as nossas novidades
-                            </span>
-                        </a>
+                        <div className="flex flex-col gap-4 text-sunset-yellow-400">
+                            <a className="flex flex-col gap-0" href="https://www.instagram.com/escoladedancayalinesaboia/" target="_blank">
+                                <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
+                                <p className={`${inter.className} text-xl`}>@escoladedancayalinesaboia</p>
+                                <span className={`${inter.className} text-xl font-light`}>
+                                    E acompanhe as nossas novidades.
+                                </span>
+                            </a>
+
+                            <a className={`${inter.className} text-lg font-medium`} href="https://wa.me/5585998552222">
+                                Entre em contato conosco: (85) 99855-2222.
+                            </a>
+                        </div>
                         <a
                             href="https://www.instagram.com/escoladedancayalinesaboia/"
                             target="_blank"

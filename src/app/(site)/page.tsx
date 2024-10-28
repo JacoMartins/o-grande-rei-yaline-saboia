@@ -534,17 +534,24 @@ export default function Home() {
             </div>
 
             <div>
+              <span className="font-bold text-lg">Aderecistas:</span>
+              <p>Ana Letícia Reis</p>
+              <p>Bruna Paiva</p>
+              <p>Bruna Tayná</p>
+              <p>Deanira Saboia</p>
+              <p>Liana Pinheiro</p>
+              <p>Lídia Pereira</p>
+              <p>Luís Eduardo Martins</p>
+              <p>Matheus Macedo</p>
+              <p>Natália Vasconcelos</p>
+              <p>Naylica Xavier</p>
+              <p>Paulo André Reis</p>
+              <p>Vonikiany Lemos</p>
+            </div>
+            
+            <div>
               <span className="font-bold text-lg">Figurinista:</span>
               <p>Natália Vasconcelos</p>
-            </div>
-
-            <div>
-              <span className="font-bold text-lg">Figurinos:</span>
-              <p>Meu Bem Dancing</p>
-              <p>D&lsquo;Ballet</p>
-              <p>Nanda Lia Criações</p>
-              <p>Natália Vasconcelos</p>
-              <p>Zeneida</p>
             </div>
           </div>
 
@@ -558,7 +565,14 @@ export default function Home() {
             {/* <span className="font-bold text-lg">Cenografia:</span> */}
             {/* <p> </p> */}
             {/* </div> */}
-
+            <div>
+              <span className="font-bold text-lg">Figurinos:</span>
+              <p>Meu Bem Dancing</p>
+              <p>D&lsquo;Ballet</p>
+              <p>Nanda Lia Criações</p>
+              <p>Natália Vasconcelos</p>
+            </div>
+            
             <div>
               <span className="font-bold text-lg">Equipe Técnica:</span>
               <p>Theatro José de Alencar</p>
