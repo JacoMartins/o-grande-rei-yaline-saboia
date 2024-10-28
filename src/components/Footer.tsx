@@ -28,8 +28,7 @@ export default function Footer() {
         <footer className="flex flex-col justify-center items-center w-full text-xl sunset-yellow-400 bg-bloody-red-800">
             <article className="flex gap-5 justify-center items-center w-full bg-bloody-red-600">
                 <div className="flex lg:flex-col md:flex-col max-md:flex-col sm:flex-col-reverse max-sm:flex-col-reverse justify-start items-center gap-10 w-full max-w-6xl w-full px-8 py-12">
-
-                    <div className="flex flex-row gap-6 justify-between items-start w-full">
+                    <div className="flex lg:flex-row md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse gap-6 justify-between items-start w-full">
                         <div className="flex flex-col gap-4 text-sunset-yellow-400">
                             <a className="flex flex-col gap-0" href="https://www.instagram.com/escoladedancayalinesaboia/" target="_blank">
                                 <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
