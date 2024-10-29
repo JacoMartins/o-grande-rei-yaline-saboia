@@ -402,7 +402,7 @@ export default function Home() {
             <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
           </a>
 
-            <span className="max-w-2xl">
+            <span>
               Entre em contato conosco! Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
             </span>
         </div>
