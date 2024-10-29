@@ -33,7 +33,7 @@ export default function Group({ characterImage, actorsImage, name, role, alt }: 
                     </div>
                 </div>
                 <div className="flex flex-col justify-start p-2 min-w-[19rem] max-w-[19rem] rounded-xl bg-bloody-red-600 select-none flip-card-back">
-                    <figure className="flex flex-col justify-center items-center w-full overflow-hidden aspect-square select-none">
+                    <figure className="flex flex-col justify-center items-center w-full overflow-hidden rounded aspect-square select-none">
                         <Image
                             src={characterImage}
                             width={270}

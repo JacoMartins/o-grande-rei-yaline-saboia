@@ -35,6 +35,8 @@ import flamingos from "@/assets/images/characters/flamingos.png"
 import hienas from "@/assets/images/characters/hienas.png"
 import leoas_jovens from "@/assets/images/characters/leoas_jovens.png"
 import gnus from "@/assets/images/characters/gnus.png"
+import canto_das_pastagem from "@/assets/images/characters/canto_das_pastagem.png"
+import esta_em_ti from "@/assets/images/characters/esta_em_ti.jpg"
 
 import banzai_elenco from "@/assets/images/elenco/banzai.png"
 import bill_elenco from "@/assets/images/elenco/bill.png"
@@ -337,7 +339,7 @@ export default function Home() {
             />
 
             <Group
-              characterImage={canto_das_pastagem_elenco}
+              characterImage={canto_das_pastagem}
               actorsImage={canto_das_pastagem_elenco}
               name="Canto das Pastagem"
               role=""
@@ -345,7 +347,7 @@ export default function Home() {
             />
 
             <Group
-              characterImage={esta_em_ti_thembas_elenco}
+              characterImage={esta_em_ti}
               actorsImage={esta_em_ti_thembas_elenco}
               name="Está em ti (Thembas)"
               role=""
@@ -401,7 +403,7 @@ export default function Home() {
           </a>
 
             <span className="max-w-2xl">
-              Deseja entrar em contato conosco? Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
+              Entre em contato conosco! Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
             </span>
         </div>
       </Section>
