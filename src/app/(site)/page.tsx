@@ -402,9 +402,16 @@ export default function Home() {
             <ArrowUpRight className="min-w-8 min-h-8 w-8 h-8" />
           </a>
 
-            <span>
-              Entre em contato conosco! Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
-            </span>
+          <span>
+            Entre em contato conosco! Nos chame em nosso whatsapp: <a className="underline" href="https://wa.me/5585999315407">(85) 9 9931-5407</a>
+          </span>
+
+          <Image src={mapa_jose_de_alencar}
+            width={1083}
+            height={1484}
+            alt="Mapa do Theatro José de Alencar"
+            className="lg:max-w-2xl md:max-w-2xl sm:w-full max-sm:w-full"
+          />
         </div>
       </Section>
 
