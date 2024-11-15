@@ -69,14 +69,18 @@ import canto_das_pastagem_elenco from "@/assets/images/elenco/canto_das_pastagem
 import esta_em_ti_thembas_elenco from "@/assets/images/elenco/esta_em_ti_thembas.png"
 
 import adce from "@/assets/images/logos/adce.png"
+import autoescola_maraponga from "@/assets/images/logos/autoescola-maraponga.png"
+import art_flor from "@/assets/images/logos/art-flor.png"
 import govce from "@/assets/images/logos/govce.png"
 import secult from "@/assets/images/logos/secult.png"
 import theatro from "@/assets/images/logos/theatro.png"
 import idm from "@/assets/images/logos/idm-branco.png"
 import konten from "@/assets/images/logos/konten.png"
 import konten_limpeza from "@/assets/images/logos/konten_limpeza.png"
+import luana_gabriel from "@/assets/images/logos/luana-gabriel.png"
 import gutrep from "@/assets/images/logos/gut.rep.png"
 import beleza_nossa from "@/assets/images/logos/beleza_nossa_branco.png"
+import petrus from "@/assets/images/logos/petrus-branca.png"
 import sg_topdecor from "@/assets/images/logos/sg_topdecor.png"
 
 import mapa_jose_de_alencar from "@/assets/images/mapa_jose_de_alencar.jpg"
@@ -479,13 +483,37 @@ export default function Home() {
             height={540}
             width={540}
             alt="Logomarca da Konten Limpeza"
-            className="w-[6rem] h-[6rem]"
+            className="w-[7rem] h-[7rem]"
           />
           <Image src={sg_topdecor}
             height={540}
             width={540}
             alt="Logomarca da SG Top Decor"
-            className="w-[6rem] h-[6rem]"
+            className="w-[7rem] h-[7rem]"
+          />
+          <Image src={art_flor}
+            height={540}
+            width={540}
+            alt="Logomarca da Art Flor"
+            className="w-[8rem] h-auto md:my-2 max-md:my-2 sm:my-2 max-sm:my-2"
+          />
+          <Image src={autoescola_maraponga}
+            height={540}
+            width={540}
+            alt="Logomarca da Autoescola Maraponga"
+            className="w-[7rem] h-[7rem]"
+          />
+          <Image src={luana_gabriel}
+            height={540}
+            width={540}
+            alt="Logomarca da Luana Gabriel"
+            className="w-[8rem] h-[8rem]"
+          />
+          <Image src={petrus}
+            height={540}
+            width={540}
+            alt="Logomarca da Petrus"
+            className="w-[8rem] h-[8rem]"
           />
         </div>
         {/* <h2
