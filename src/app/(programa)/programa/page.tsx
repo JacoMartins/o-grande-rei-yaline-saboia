@@ -1,15 +1,16 @@
-import pagina1 from "@/assets/images/programa/1.png"
-import pagina2 from "@/assets/images/programa/2.png"
-import pagina3 from "@/assets/images/programa/3.png"
-import pagina4 from "@/assets/images/programa/4.png"
-import pagina5 from "@/assets/images/programa/5.png"
-import pagina6 from "@/assets/images/programa/6.png"
-import pagina7 from "@/assets/images/programa/7.png"
-import pagina8 from "@/assets/images/programa/8.png"
-import pagina9 from "@/assets/images/programa/9.png"
-import pagina10 from "@/assets/images/programa/10.png"
-import pagina11 from "@/assets/images/programa/11.png"
-import pagina12 from "@/assets/images/programa/12.png"
+import pagina1 from "@/assets/images/programa/1.jpg"
+import pagina2 from "@/assets/images/programa/2.jpg"
+import pagina3 from "@/assets/images/programa/3.jpg"
+import pagina4 from "@/assets/images/programa/4.jpg"
+import pagina5 from "@/assets/images/programa/5.jpg"
+import pagina6 from "@/assets/images/programa/6.jpg"
+import pagina7 from "@/assets/images/programa/7.jpg"
+import pagina8 from "@/assets/images/programa/8.jpg"
+import pagina9 from "@/assets/images/programa/9.jpg"
+import pagina10 from "@/assets/images/programa/10.jpg"
+import pagina11 from "@/assets/images/programa/11.jpg"
+import pagina12 from "@/assets/images/programa/12.jpg"
+import pagina13 from "@/assets/images/programa/13.jpg"
 import Image from "next/image";
 import Programa from "@/components/Programa";
 
@@ -123,6 +124,15 @@ export default function Home() {
                             alt="Página 12 do programa do espetáculo 'O grande rei'"
                             width={pagina12.width}
                             height={pagina12.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina13}
+                            alt="Página 13 do programa do espetáculo 'O grande rei'"
+                            width={pagina13.width}
+                            height={pagina13.height}
                             className="object-cover w-full"
                         />
                     </figure>
