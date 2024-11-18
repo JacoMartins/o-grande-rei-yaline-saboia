@@ -94,7 +94,7 @@ export default function Header() {
                 >
                     Ficha Técnica
                 </a>
-                {/*<a 
+                {/* <a 
                     className="text-nowrap"
                     href="/programa"
                 >
