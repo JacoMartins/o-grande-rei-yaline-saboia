@@ -16,9 +16,9 @@ import Programa from "@/components/Programa";
 
 export default function Home() {
     return (
-        <main className="h-auto w-full bg-bloody-red-800 pt-[5.5rem]">
+        <main className="h-auto w-full bg-bloody-red-800">
             <section className="flex flex-col justify-center items-center w-full">
-                <Programa className="lg:w-[30rem] md:w-[30rem] max-sm:w-full sm:w-full">
+                <Programa className="lg:w-[28rem] md:w-[28rem] max-sm:w-full sm:w-full">
                     <figure className="aspect-a4 h-auto lg:w-[30rem] lg:min-w-[30rem] md:w-[30rem] md:min-w-[30rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
                         <Image
                             src={pagina1}
