@@ -71,33 +71,6 @@ export default function Programa({ className, children }: RowProps) {
     setIsDragging(false);
   }
 
-  function handleMouseDown(event: React.MouseEvent<HTMLDivElement>) {
-    setIsDragging(true)
-
-    if (containerRef.current) {
-      setStartX(event.clientX - containerRef.current.offsetLeft)
-      setScrollLeft(containerRef.current.scrollLeft)
-    }
-  }
-
-  function handleMouseUp() {
-    setIsDragging(false)
-  }
-
-  function handleTouchStart(event: React.TouchEvent<HTMLDivElement>) {
-    setIsDragging(true);
-    const touch = event.touches[0];
-
-    if (containerRef.current) {
-      setStartX(touch.clientX - containerRef.current.offsetLeft);
-      setScrollLeft(containerRef.current.scrollLeft);
-    }
-  }
-
-  function handleTouchEnd() {
-    setIsDragging(false);
-  }
-
   return (
     <div
       className={`${className} flex flex-col flex gap-2 w-full`}
