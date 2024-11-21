@@ -91,7 +91,7 @@ export default function Programa({ className, children }: RowProps) {
           <CaretLeft size={24} weight='bold' />
         </button>
 
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 overflow-hidden w-full">
           {Array.from({ length: length + 1 }).map((_, index) =>
             <div key={Math.random()} className={`w-2 h-2 rounded-full ${slide === index ? 'bg-lemon-yellow-100' : 'bg-lemon-yellow-100/30 dark:bg-lemon-yellow-100/30'} transition duration-300 cursor-pointer`} onClick={() => scrollToSlide(index)} />
           )}
