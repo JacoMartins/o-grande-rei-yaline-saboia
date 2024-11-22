@@ -23,6 +23,7 @@ import pagina22 from "@/assets/images/programa/22.jpg"
 import pagina23 from "@/assets/images/programa/23.jpg"
 import pagina24 from "@/assets/images/programa/24.jpg"
 import pagina25 from "@/assets/images/programa/25.jpg"
+import pagina26 from "@/assets/images/programa/26.jpg"
 import Image from "next/image";
 import Programa from "@/components/Programa";
 
@@ -253,6 +254,15 @@ export default function Home() {
                             alt="Página 25 do programa do espetáculo 'O grande rei'"
                             width={pagina25.width}
                             height={pagina25.height}
+                            className="object-cover w-full"
+                        />
+                    </figure>
+                    <figure className="aspect-a4 h-auto lg:w-[28rem] lg:min-w-[28rem] md:w-[28rem] md:min-w-[28rem] max-sm:min-w-[100vw] max-sm:max-w-[100vw] sm:min-w-[100vw] sm:max-w-[100vw] bg-sunset-orange-400">
+                        <Image
+                            src={pagina26}
+                            alt="Página 26 do programa do espetáculo 'O grande rei'"
+                            width={pagina26.width}
+                            height={pagina26.height}
                             className="object-cover w-full"
                         />
                     </figure>
