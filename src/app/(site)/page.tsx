@@ -95,9 +95,6 @@ const berlin = localFont({ src: '../../assets/fonts/BerlinSansFB-Regular.ttf' })
 export default function Home() {
   return (
     <main className={`flex flex-col ${berlin.className} lg:pt-20 md:pt-20 max-md:pt-20 sm:pt-24 max-sm:pt-24`}>
-      <section id="timer" className="flex flex-row justify-center items-center p-4 bg-sunset-yellow-400 text-center uppercase lg:text-2xl md:text-2xl sm:text-xl max-sm:text-xl text-bloody-red-800">
-        <Timer />
-      </section>
 
       <section id="inicio">
         <figure className="lg:flex md:flex max-md:flex sm:hidden max-sm:hidden flex-col justify-center w-full bg-bloody-red-600 max-md:max-w-full">
