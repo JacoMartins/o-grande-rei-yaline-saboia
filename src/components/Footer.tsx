@@ -30,7 +30,7 @@ export default function Footer() {
                 <div className="flex lg:flex-col md:flex-col max-md:flex-col sm:flex-col-reverse max-sm:flex-col-reverse justify-start items-center gap-10 w-full max-w-6xl w-full px-8 py-12">
                     <div className="flex lg:flex-row md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse gap-6 justify-between items-start w-full">
                         <div className="flex flex-col gap-4 text-sunset-yellow-400">
-                            <a className="flex flex-col gap-0" href="https://www.instagram.com/escoladedancayalinesaboia/" target="_blank">
+                            <a className="flex flex-col gap-0" href="https://www.instagram.com/escdancayalinesaboia/" target="_blank">
                                 <h3 className={`${berlin.className} text-3xl`}>Siga-nos no Instagram</h3>
                                 <span className={`${inter.className} text-xl font-light`}>
                                     E acompanhe as nossas novidades.
@@ -43,12 +43,12 @@ export default function Footer() {
                                 </p>
                                 <div className="flex flex-col gap-0">
                                     <a className={`${inter.className} text-lg font-normal`} href="https://wa.me/5585998552222">(85) 99855-2222</a>
-                                    <a className={`${inter.className} text-lg font-normal`} href="https://www.instagram.com/escoladedancayalinesaboia/">@escoladedancayalinesaboia</a>
+                                    <a className={`${inter.className} text-lg font-normal`} href="https://www.instagram.com/escdancayalinesaboia/">@escdancayalinesaboia</a>
                                 </div>
                             </div>
                         </div>
                         <a
-                            href="https://www.instagram.com/escoladedancayalinesaboia/"
+                            href="https://www.instagram.com/escdancayalinesaboia/"
                             target="_blank"
                             className="flex justify-center items-center p-1.5 w-12 h-12 bg-sunset-yellow-400 rounded-2xl text-bloody-red-600 transition-all duration-300 ease-in-out hover:brightness-105 active:brightness-90"
                         >
